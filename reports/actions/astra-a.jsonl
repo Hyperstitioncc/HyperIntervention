@@ -1,0 +1,341 @@
+{"turn":1,"minute":0.1,"seconds":0.0,"action":"list","status":"sometimes"}
+{"turn":2,"minute":0.3,"seconds":0.04,"action":"open","idx":3}
+{"turn":2,"minute":0.3,"seconds":0.08,"action":"open","idx":9}
+{"turn":2,"minute":0.3,"seconds":0.04,"action":"open","idx":16}
+{"turn":2,"minute":0.3,"seconds":0.07,"action":"open","idx":32}
+{"turn":2,"minute":0.3,"seconds":0.09,"action":"open","idx":41}
+{"turn":2,"minute":0.3,"seconds":0.1,"action":"open","idx":51}
+{"turn":2,"minute":0.3,"seconds":0.11,"action":"open","idx":63}
+{"turn":2,"minute":0.3,"seconds":0.12,"action":"open","idx":83}
+{"turn":10,"minute":0.6,"seconds":8.85,"action":"fork","idx":3,"pos":1,"choice":0,"tries":3,"write":"all"}
+{"turn":10,"minute":0.6,"seconds":16.32,"action":"fork","idx":9,"pos":77,"choice":0,"tries":3,"write":"all"}
+{"turn":10,"minute":0.6,"seconds":0.04,"action":"look","idx":16,"from":138,"to":141}
+{"turn":10,"minute":0.6,"seconds":5.76,"action":"fork","idx":32,"pos":47,"choice":1,"tries":3,"write":"all"}
+{"turn":10,"minute":0.6,"seconds":6.03,"action":"fork","idx":41,"pos":101,"new":",","tries":3,"write":"all"}
+{"turn":10,"minute":0.6,"seconds":4.68,"action":"fork","idx":51,"pos":0,"choice":1,"tries":3,"write":"all"}
+{"turn":10,"minute":0.6,"seconds":0.11,"action":"look","idx":63,"from":39,"to":41}
+{"turn":10,"minute":0.6,"seconds":0.16,"action":"weight","idx":83,"from":0,"to":1,"w":1}
+{"turn":10,"minute":0.6,"seconds":0.04,"action":"keep","idx":83}
+{"turn":19,"minute":0.9,"seconds":0.33,"action":"weight","idx":3,"marks":[{"pos":0,"w":1},{"pos":11,"w":1}]}
+{"turn":19,"minute":0.9,"seconds":0.05,"action":"keep","idx":3}
+{"turn":19,"minute":0.9,"seconds":0.33,"action":"keep","idx":9}
+{"turn":19,"minute":0.9,"seconds":0.27,"action":"keep","idx":32}
+{"turn":19,"minute":0.9,"seconds":0.33,"action":"keep","idx":41}
+{"turn":19,"minute":0.9,"seconds":0.33,"action":"keep","idx":51}
+{"turn":19,"minute":0.9,"seconds":7.43,"action":"fork","idx":16,"pos":139,"choice":1,"tries":3,"write":"all"}
+{"turn":19,"minute":0.9,"seconds":4.61,"action":"fork","idx":63,"pos":40,"choice":1,"tries":3,"write":"all"}
+{"turn":19,"minute":0.9,"seconds":0.1,"action":"look","idx":34,"from":0,"to":5}
+{"turn":19,"minute":0.9,"seconds":0.15,"action":"look","idx":35,"from":0,"to":5}
+{"turn":19,"minute":0.9,"seconds":0.14,"action":"look","idx":38,"from":0,"to":5}
+{"turn":19,"minute":0.9,"seconds":0.19,"action":"look","idx":47,"from":0,"to":5}
+{"turn":19,"minute":0.9,"seconds":0.17,"action":"look","idx":52,"from":0,"to":5}
+{"turn":19,"minute":0.9,"seconds":0.22,"action":"look","idx":55,"from":0,"to":5}
+{"turn":19,"minute":0.9,"seconds":0.2,"action":"look","idx":58,"from":0,"to":5}
+{"turn":19,"minute":0.9,"seconds":0.24,"action":"look","idx":62,"from":0,"to":5}
+{"turn":35,"minute":1.4,"seconds":18.78,"action":"fork","idx":34,"pos":5,"choice":1,"tries":3}
+{"turn":35,"minute":1.4,"seconds":9.86,"action":"fork","idx":35,"pos":0,"choice":1,"tries":3}
+{"turn":35,"minute":1.4,"seconds":18.64,"action":"fork","idx":38,"pos":0,"choice":1,"tries":3}
+{"turn":35,"minute":1.4,"seconds":21.35,"action":"fork","idx":47,"pos":0,"choice":1,"tries":3}
+{"turn":35,"minute":1.4,"seconds":22.58,"action":"fork","idx":52,"pos":5,"choice":1,"tries":3}
+{"turn":35,"minute":1.4,"seconds":7.18,"action":"fork","idx":55,"pos":0,"new":"First","up":0,"tries":3}
+{"turn":35,"minute":1.4,"seconds":13.06,"action":"fork","idx":58,"pos":0,"choice":1,"tries":3}
+{"turn":35,"minute":1.4,"seconds":12.06,"action":"fork","idx":62,"pos":0,"new":"The","up":0,"tries":3}
+{"turn":43,"minute":1.7,"seconds":9.52,"action":"fork","idx":34,"pos":7,"choice":2,"tries":3}
+{"turn":43,"minute":1.7,"seconds":0.24,"action":"weight","idx":38,"marks":[{"pos":8,"w":1},{"pos":14,"w":1}]}
+{"turn":43,"minute":1.7,"seconds":0.17,"action":"keep","idx":38}
+{"turn":43,"minute":1.7,"seconds":0.27,"action":"weight","idx":47,"marks":[{"pos":23,"w":1},{"pos":31,"w":1}]}
+{"turn":43,"minute":1.7,"seconds":2.1,"action":"fork","idx":47,"pos":692,"choice":0,"tries":3}
+{"turn":43,"minute":1.7,"seconds":0.18,"action":"weight","idx":58,"marks":[{"pos":76,"w":1}]}
+{"turn":43,"minute":1.7,"seconds":0.21,"action":"keep","idx":58}
+{"turn":43,"minute":1.7,"seconds":0.28,"action":"weight","idx":62,"marks":[{"pos":1,"w":1},{"pos":56,"w":1}]}
+{"turn":43,"minute":1.7,"seconds":0.13,"action":"keep","idx":62}
+{"turn":43,"minute":1.7,"seconds":3.67,"action":"fork","idx":55,"pos":125,"choice":2,"tries":3}
+{"turn":43,"minute":1.7,"seconds":0.13,"action":"look","idx":35,"from":134,"to":137}
+{"turn":54,"minute":1.8,"seconds":4.62,"action":"fork","idx":34,"pos":188,"choice":2,"tries":3}
+{"turn":54,"minute":1.8,"seconds":3.46,"action":"fork","idx":35,"pos":136,"choice":1,"tries":3}
+{"turn":54,"minute":1.8,"seconds":2.66,"action":"fork","idx":55,"pos":127,"choice":4,"tries":3}
+{"turn":54,"minute":1.8,"seconds":0.13,"action":"look","idx":47,"from":703,"to":705}
+{"turn":58,"minute":12.7,"seconds":0.17,"action":"fork","idx":47,"pos":704,"choice":1,"write":"all"}
+{"turn":58,"minute":12.7,"seconds":0.14,"action":"keep","idx":47}
+{"turn":58,"minute":12.7,"seconds":0.09,"action":"keep","idx":34}
+{"turn":58,"minute":12.7,"seconds":0.25,"action":"keep","idx":35}
+{"turn":58,"minute":12.7,"seconds":0.25,"action":"keep","idx":55}
+{"turn":58,"minute":12.7,"seconds":645.71,"action":"train","steps":10,"validate":4}
+{"turn":64,"minute":12.9,"seconds":0.03,"action":"look","idx":35,"from":0,"to":7}
+{"turn":64,"minute":12.9,"seconds":0.02,"action":"look","idx":34,"from":0,"to":7}
+{"turn":64,"minute":12.9,"seconds":0.06,"action":"look","idx":55,"from":0,"to":7}
+{"turn":64,"minute":12.9,"seconds":0.06,"action":"look","idx":62,"from":0,"to":7}
+{"turn":64,"minute":12.9,"seconds":0.0,"action":"list","status":"right","subject":"intermediate_algebra"}
+{"turn":69,"minute":13.1,"seconds":0.0,"action":"list","status":"sometimes","subject":"geometry"}
+{"turn":70,"minute":13.8,"seconds":21.6,"action":"fork","idx":101,"pos":0,"new":"Let","up":0,"tries":3}
+{"turn":70,"minute":13.8,"seconds":19.31,"action":"fork","idx":231,"pos":0,"new":"Let","up":0,"tries":3}
+{"turn":70,"minute":13.8,"seconds":10.12,"action":"fork","idx":248,"pos":0,"new":"Let","up":0,"tries":3}
+{"turn":70,"minute":13.8,"seconds":12.26,"action":"fork","idx":261,"pos":0,"new":"Let","up":0,"tries":3}
+{"turn":70,"minute":13.8,"seconds":21.8,"action":"fork","idx":315,"pos":0,"new":"Let","up":0,"tries":3}
+{"turn":70,"minute":13.8,"seconds":16.77,"action":"fork","idx":120,"pos":0,"new":"Let","up":0,"tries":3}
+{"turn":70,"minute":13.8,"seconds":26.95,"action":"fork","idx":133,"pos":0,"new":"Let","up":0,"tries":3}
+{"turn":70,"minute":13.8,"seconds":21.97,"action":"fork","idx":159,"pos":0,"new":"Let","up":0,"tries":3}
+{"turn":78,"minute":14.1,"seconds":6.78,"action":"fork","idx":120,"pos":87,"choice":2,"tries":3}
+{"turn":78,"minute":14.1,"seconds":8.41,"action":"fork","idx":159,"pos":136,"choice":0,"tries":3}
+{"turn":78,"minute":14.1,"seconds":0.21,"action":"weight","idx":101,"marks":[{"pos":83,"w":1}]}
+{"turn":78,"minute":14.1,"seconds":0.39,"action":"keep","idx":101}
+{"turn":78,"minute":14.1,"seconds":0.23,"action":"weight","idx":231,"marks":[{"pos":197,"w":1}]}
+{"turn":78,"minute":14.1,"seconds":0.37,"action":"keep","idx":231}
+{"turn":78,"minute":14.1,"seconds":0.12,"action":"weight","idx":248,"marks":[{"pos":2,"w":1}]}
+{"turn":78,"minute":14.1,"seconds":0.05,"action":"keep","idx":248}
+{"turn":78,"minute":14.1,"seconds":0.24,"action":"weight","idx":261,"marks":[{"pos":38,"w":1}]}
+{"turn":78,"minute":14.1,"seconds":0.36,"action":"keep","idx":261}
+{"turn":78,"minute":14.1,"seconds":0.27,"action":"weight","idx":315,"marks":[{"pos":98,"w":1}]}
+{"turn":78,"minute":14.1,"seconds":0.33,"action":"keep","idx":315}
+{"turn":78,"minute":14.1,"seconds":0.32,"action":"weight","idx":133,"marks":[{"pos":228,"w":1}]}
+{"turn":78,"minute":14.1,"seconds":0.28,"action":"keep","idx":133}
+{"turn":78,"minute":14.1,"seconds":11.04,"action":"fork","idx":97,"pos":0,"new":"Since","up":0,"tries":3}
+{"turn":78,"minute":14.1,"seconds":3.19,"action":"fork","idx":103,"pos":0,"new":"Since","up":0,"tries":3}
+{"turn":78,"minute":14.1,"seconds":7.18,"action":"fork","idx":115,"pos":0,"new":"Since","up":0,"tries":3}
+{"turn":78,"minute":14.1,"seconds":11.96,"action":"fork","idx":153,"pos":0,"new":"Since","up":0,"tries":3}
+{"turn":96,"minute":23.4,"seconds":0.09,"action":"keep","idx":120}
+{"turn":96,"minute":23.4,"seconds":0.14,"action":"keep","idx":159}
+{"turn":96,"minute":23.4,"seconds":0.07,"action":"weight","idx":97,"marks":[{"pos":1,"w":1}]}
+{"turn":96,"minute":23.4,"seconds":0.08,"action":"keep","idx":97}
+{"turn":96,"minute":23.4,"seconds":0.13,"action":"weight","idx":153,"marks":[{"pos":8,"w":1},{"pos":19,"w":1}]}
+{"turn":96,"minute":23.4,"seconds":0.04,"action":"keep","idx":153}
+{"turn":96,"minute":23.4,"seconds":547.88,"action":"train","steps":8,"hold":"rest","validate":4}
+{"turn":103,"minute":23.5,"seconds":0.02,"action":"open","idx":120}
+{"turn":103,"minute":23.5,"seconds":0.04,"action":"open","idx":9}
+{"turn":103,"minute":23.5,"seconds":0.08,"action":"open","idx":1040}
+{"turn":106,"minute":39.4,"seconds":937.35,"action":"use","version":"v0"}
+{"turn":106,"minute":39.4,"seconds":0.0,"action":"list","status":"right","subject":"precalculus"}
+{"turn":108,"minute":39.5,"seconds":0.08,"action":"open","idx":220}
+{"turn":108,"minute":39.5,"seconds":0.14,"action":"open","idx":224}
+{"turn":108,"minute":39.5,"seconds":0.1,"action":"open","idx":37}
+{"turn":108,"minute":39.5,"seconds":0.17,"action":"open","idx":56}
+{"turn":108,"minute":39.5,"seconds":0.22,"action":"open","idx":108}
+{"turn":108,"minute":39.5,"seconds":0.11,"action":"open","idx":115}
+{"turn":114,"minute":39.9,"seconds":13.06,"action":"fork","idx":220,"pos":320,"new":" coefficients","tries":3}
+{"turn":114,"minute":39.9,"seconds":12.07,"action":"fork","idx":37,"pos":378,"new":"Notice","tries":3}
+{"turn":114,"minute":39.9,"seconds":12.33,"action":"fork","idx":56,"pos":19,"choice":0,"tries":3}
+{"turn":114,"minute":39.9,"seconds":11.66,"action":"fork","idx":108,"pos":273,"new":"Fix","tries":3}
+{"turn":114,"minute":39.9,"seconds":4.87,"action":"fork","idx":115,"pos":178,"new":"Therefore","tries":3}
+{"turn":114,"minute":39.9,"seconds":0.22,"action":"look","idx":224,"from":390,"to":394}
+{"turn":120,"minute":40.4,"seconds":4.74,"action":"fork","idx":220,"pos":360,"choice":0,"tries":3}
+{"turn":120,"minute":40.4,"seconds":1.15,"action":"fork","idx":37,"pos":859,"new":" denominator","tries":2}
+{"turn":120,"minute":40.4,"seconds":14.54,"action":"fork","idx":56,"pos":20,"new":" use","up":0,"tries":3}
+{"turn":120,"minute":40.4,"seconds":11.67,"action":"fork","idx":108,"pos":285,"new":" are","tries":3}
+{"turn":120,"minute":40.4,"seconds":0.31,"action":"fork","idx":115,"pos":205,"choice":1,"tries":3}
+{"turn":120,"minute":40.4,"seconds":14.08,"action":"fork","idx":224,"pos":344,"choice":2,"tries":3}
+{"turn":126,"minute":44.7,"seconds":0.29,"action":"keep","idx":220}
+{"turn":126,"minute":44.7,"seconds":0.25,"action":"weight","idx":37,"marks":[{"pos":516,"w":1},{"pos":614,"w":1}]}
+{"turn":126,"minute":44.7,"seconds":0.16,"action":"keep","idx":37}
+{"turn":126,"minute":44.7,"seconds":0.25,"action":"keep","idx":115}
+{"turn":126,"minute":44.7,"seconds":0.3,"action":"keep","idx":224}
+{"turn":126,"minute":44.7,"seconds":0.16,"action":"look","idx":56,"from":21,"to":21}
+{"turn":126,"minute":44.7,"seconds":6.92,"action":"fork","idx":108,"pos":0,"new":"The","up":0,"tries":3}
+{"turn":126,"minute":44.7,"seconds":0.01,"action":"list","status":"sometimes","offset":120}
+{"turn":134,"minute":45.0,"seconds":0.16,"action":"fork","idx":56,"pos":21,"choice":0,"write":1}
+{"turn":134,"minute":45.0,"seconds":10.53,"action":"fork","idx":108,"pos":132,"new":" and","tries":3}
+{"turn":134,"minute":45.0,"seconds":0.01,"action":"open","idx":553}
+{"turn":134,"minute":45.0,"seconds":0.1,"action":"open","idx":542}
+{"turn":134,"minute":45.0,"seconds":0.12,"action":"open","idx":370}
+{"turn":134,"minute":45.0,"seconds":0.14,"action":"open","idx":374}
+{"turn":140,"minute":45.3,"seconds":5.54,"action":"fork","idx":553,"pos":0,"choice":0,"tries":3}
+{"turn":140,"minute":45.3,"seconds":2.91,"action":"fork","idx":542,"pos":31,"choice":1,"tries":3}
+{"turn":140,"minute":45.3,"seconds":13.81,"action":"fork","idx":370,"pos":64,"choice":0,"down":1,"tries":3}
+{"turn":140,"minute":45.3,"seconds":3.02,"action":"fork","idx":374,"pos":183,"choice":2,"tries":3}
+{"turn":140,"minute":45.3,"seconds":14.61,"action":"fork","idx":56,"pos":22,"new":" formula","up":0,"tries":3}
+{"turn":140,"minute":45.3,"seconds":12.66,"action":"fork","idx":108,"pos":134,"new":"2","tries":3}
+{"turn":146,"minute":49.6,"seconds":0.08,"action":"keep","idx":553}
+{"turn":146,"minute":49.6,"seconds":0.18,"action":"keep","idx":542}
+{"turn":146,"minute":49.6,"seconds":0.18,"action":"keep","idx":374}
+{"turn":146,"minute":49.6,"seconds":9.27,"action":"fork","idx":370,"pos":115,"new":" x","tries":3}
+{"turn":146,"minute":49.6,"seconds":6.05,"action":"fork","idx":56,"pos":25,"choice":0,"tries":3}
+{"turn":146,"minute":49.6,"seconds":9.99,"action":"fork","idx":108,"pos":146,"new":"4","tries":3}
+{"turn":152,"minute":60.9,"seconds":0.1,"action":"keep","idx":370}
+{"turn":152,"minute":60.9,"seconds":673.98,"action":"train","start":"base","data":"all","only":[3,9,32,41,34,37,115,220,224,370,374,542,553],"optimizer":"sgd","embeddings":"freeze","steps":8,"validate":4}
+{"turn":154,"minute":61.0,"seconds":0.0,"action":"status"}
+{"turn":155,"minute":61.1,"seconds":0.04,"action":"open","idx":79}
+{"turn":155,"minute":61.1,"seconds":0.02,"action":"open","idx":164}
+{"turn":155,"minute":61.1,"seconds":0.05,"action":"open","idx":286}
+{"turn":155,"minute":61.1,"seconds":0.06,"action":"open","idx":577}
+{"turn":155,"minute":61.1,"seconds":0.07,"action":"open","idx":594}
+{"turn":160,"minute":65.7,"seconds":8.33,"action":"fork","idx":79,"pos":64,"new":"First","tries":3}
+{"turn":160,"minute":65.7,"seconds":5.72,"action":"fork","idx":164,"pos":81,"new":" Since","tries":3}
+{"turn":160,"minute":65.7,"seconds":7.06,"action":"fork","idx":286,"pos":0,"new":"By","up":0,"tries":3}
+{"turn":160,"minute":65.7,"seconds":1.65,"action":"fork","idx":577,"pos":329,"new":"However","tries":3}
+{"turn":160,"minute":65.7,"seconds":5.98,"action":"fork","idx":594,"pos":33,"new":" When","tries":3}
+{"turn":165,"minute":66.3,"seconds":0.15,"action":"weight","idx":79,"marks":[{"pos":256,"w":1},{"pos":257,"w":1}]}
+{"turn":165,"minute":66.3,"seconds":0.07,"action":"keep","idx":79}
+{"turn":165,"minute":66.3,"seconds":0.11,"action":"keep","idx":164}
+{"turn":165,"minute":66.3,"seconds":10.92,"action":"fork","idx":286,"pos":17,"new":"px","tries":3}
+{"turn":165,"minute":66.3,"seconds":0.15,"action":"keep","idx":577}
+{"turn":165,"minute":66.3,"seconds":0.11,"action":"keep","idx":594}
+{"turn":165,"minute":66.3,"seconds":19.32,"action":"fork","idx":345,"pos":0,"new":"Let","tries":2}
+{"turn":165,"minute":66.3,"seconds":25.01,"action":"fork","idx":354,"pos":0,"new":"Let","tries":2}
+{"turn":165,"minute":66.3,"seconds":28.4,"action":"fork","idx":392,"pos":0,"new":"Let","tries":2}
+{"turn":165,"minute":66.3,"seconds":16.43,"action":"fork","idx":408,"pos":0,"new":"Let","tries":2}
+{"turn":165,"minute":66.3,"seconds":20.03,"action":"fork","idx":400,"pos":0,"new":"Let","tries":2}
+{"turn":165,"minute":66.3,"seconds":25.39,"action":"fork","idx":428,"pos":0,"new":"Let","tries":2}
+{"turn":177,"minute":67.1,"seconds":7.89,"action":"fork","idx":286,"pos":56,"choice":0,"tries":2}
+{"turn":177,"minute":67.1,"seconds":4.28,"action":"fork","idx":408,"pos":151,"new":" isolate","tries":3}
+{"turn":177,"minute":67.1,"seconds":9.87,"action":"fork","idx":392,"pos":288,"new":" $","tries":3}
+{"turn":177,"minute":67.1,"seconds":0.23,"action":"weight","idx":400,"marks":[{"pos":1,"w":2},{"pos":2,"w":1}]}
+{"turn":177,"minute":67.1,"seconds":0.03,"action":"keep","idx":400}
+{"turn":177,"minute":67.1,"seconds":14.73,"action":"fork","idx":354,"pos":1,"new":" $","tries":3}
+{"turn":177,"minute":67.1,"seconds":38.52,"action":"fork","idx":428,"pos":0,"new":"The","tries":2}
+{"turn":177,"minute":67.1,"seconds":4.4,"action":"fork","idx":345,"pos":1,"new":" $","tries":2}
+{"turn":185,"minute":67.4,"seconds":0.17,"action":"keep","idx":286}
+{"turn":185,"minute":67.4,"seconds":0.18,"action":"keep","idx":408}
+{"turn":185,"minute":67.4,"seconds":10.2,"action":"fork","idx":392,"pos":316,"new":" count","tries":3}
+{"turn":185,"minute":67.4,"seconds":5.03,"action":"fork","idx":428,"pos":168,"new":"frac","tries":3}
+{"turn":189,"minute":67.6,"seconds":6.03,"action":"fork","idx":392,"pos":325,"choice":0,"tries":2}
+{"turn":189,"minute":67.6,"seconds":4.7,"action":"fork","idx":428,"pos":171,"choice":0,"tries":2}
+{"turn":191,"minute":77.2,"seconds":0.2,"action":"keep","idx":428}
+{"turn":191,"minute":77.2,"seconds":0.14,"action":"fork","idx":392,"pos":681,"choice":1,"write":0}
+{"turn":191,"minute":77.2,"seconds":0.13,"action":"keep","idx":392}
+{"turn":191,"minute":77.2,"seconds":564.86,"action":"train","only":[79,164,286,577,594,392,400,408,428,38,62,58,83],"lr":2e-07,"steps":8,"validate":4}
+{"turn":195,"minute":77.3,"seconds":0.05,"action":"open","idx":553}
+{"turn":195,"minute":77.3,"seconds":0.17,"action":"open","idx":33}
+{"turn":195,"minute":77.3,"seconds":0.08,"action":"open","idx":82}
+{"turn":198,"minute":89.7,"seconds":735.71,"action":"train","start":"base","data":"all","only":[3,9,32,41,34,37,115,220,224,370,374,542,79,164,286,577,594,392,400,408,428,101,120,133,153,159,231,248,261,315,38,58,62],"hold":"none","optimizer":"sgd","embeddings":"freeze","steps":9,"validate":4}
+{"turn":199,"minute":93.9,"seconds":0.02,"action":"open","idx":224}
+{"turn":199,"minute":93.9,"seconds":0.08,"action":"open","idx":655}
+{"turn":199,"minute":93.9,"seconds":0.08,"action":"open","idx":911}
+{"turn":202,"minute":94.6,"seconds":9.71,"action":"fork","idx":224,"pos":0,"new":"To","tries":3}
+{"turn":202,"minute":94.6,"seconds":11.57,"action":"fork","idx":655,"pos":0,"new":"To","tries":3}
+{"turn":202,"minute":94.6,"seconds":23.51,"action":"fork","idx":911,"pos":0,"new":"To","tries":3}
+{"turn":202,"minute":94.6,"seconds":15.94,"action":"fork","idx":553,"pos":0,"new":"To","tries":3}
+{"turn":202,"minute":94.6,"seconds":4.33,"action":"fork","idx":82,"pos":0,"new":"To","tries":3}
+{"turn":202,"minute":94.6,"seconds":29.06,"action":"fork","idx":33,"pos":0,"new":"To","tries":3}
+{"turn":202,"minute":94.6,"seconds":14.59,"action":"fork","idx":194,"pos":0,"new":"To","tries":3}
+{"turn":202,"minute":94.6,"seconds":12.8,"action":"fork","idx":191,"pos":0,"new":"To","tries":3}
+{"turn":210,"minute":94.8,"seconds":0.23,"action":"weight","idx":224,"marks":[{"pos":6,"w":2},{"pos":166,"w":1}]}
+{"turn":210,"minute":94.8,"seconds":0.21,"action":"keep","idx":224}
+{"turn":210,"minute":94.8,"seconds":0.33,"action":"weight","idx":194,"marks":[{"pos":6,"w":1},{"pos":42,"w":1},{"pos":75,"w":1}]}
+{"turn":210,"minute":94.8,"seconds":0.15,"action":"keep","idx":194}
+{"turn":210,"minute":94.8,"seconds":0.38,"action":"weight","idx":191,"marks":[{"pos":46,"w":1},{"pos":154,"w":1}]}
+{"turn":210,"minute":94.8,"seconds":0.21,"action":"keep","idx":191}
+{"turn":210,"minute":94.8,"seconds":0.36,"action":"weight","idx":911,"marks":[{"pos":19,"w":1},{"pos":551,"w":1}]}
+{"turn":210,"minute":94.8,"seconds":0.22,"action":"keep","idx":911}
+{"turn":210,"minute":94.8,"seconds":0.27,"action":"weight","idx":82,"marks":[{"pos":8,"w":1},{"pos":92,"w":1}]}
+{"turn":210,"minute":94.8,"seconds":0.2,"action":"keep","idx":82}
+{"turn":210,"minute":94.8,"seconds":0.39,"action":"weight","idx":553,"marks":[{"pos":32,"w":1},{"pos":58,"w":1}]}
+{"turn":210,"minute":94.8,"seconds":0.2,"action":"keep","idx":553}
+{"turn":210,"minute":94.8,"seconds":2.26,"action":"fork","idx":655,"pos":64,"choice":1,"tries":3}
+{"turn":210,"minute":94.8,"seconds":3.91,"action":"fork","idx":33,"pos":862,"choice":1,"tries":3}
+{"turn":224,"minute":98.7,"seconds":0.12,"action":"keep","idx":655}
+{"turn":224,"minute":98.7,"seconds":4.2,"action":"fork","idx":33,"pos":862,"new":"Since","tries":3}
+{"turn":224,"minute":98.7,"seconds":11.46,"action":"fork","idx":306,"pos":0,"new":"To","tries":3}
+{"turn":224,"minute":98.7,"seconds":16.07,"action":"fork","idx":682,"pos":0,"new":"To","tries":3}
+{"turn":228,"minute":110.3,"seconds":0.16,"action":"weight","idx":682,"marks":[{"pos":13,"w":1},{"pos":426,"w":1}]}
+{"turn":228,"minute":110.3,"seconds":0.11,"action":"keep","idx":682}
+{"turn":228,"minute":110.3,"seconds":689.66,"action":"train","start":"base","data":"all","only":[224,655,682,194,191,911,553,82,370,32,9,41],"steps":8,"validate":4}
+{"turn":231,"minute":112.9,"seconds":0.06,"action":"open","idx":306}
+{"turn":231,"minute":112.9,"seconds":0.06,"action":"open","idx":499}
+{"turn":231,"minute":112.9,"seconds":0.2,"action":"open","idx":532}
+{"turn":231,"minute":112.9,"seconds":0.13,"action":"open","idx":596}
+{"turn":231,"minute":112.9,"seconds":0.04,"action":"open","idx":889}
+{"turn":231,"minute":112.9,"seconds":0.24,"action":"open","idx":1074}
+{"turn":237,"minute":113.3,"seconds":15.79,"action":"fork","idx":306,"pos":316,"new":"From","tries":3}
+{"turn":237,"minute":113.3,"seconds":12.25,"action":"fork","idx":532,"pos":415,"new":" Testing","tries":3}
+{"turn":237,"minute":113.3,"seconds":12.79,"action":"fork","idx":596,"pos":231,"new":" Since","tries":3}
+{"turn":237,"minute":113.3,"seconds":8.46,"action":"fork","idx":889,"pos":61,"new":"Since","tries":3}
+{"turn":237,"minute":113.3,"seconds":4.33,"action":"fork","idx":499,"pos":26,"choice":0,"tries":3}
+{"turn":237,"minute":113.3,"seconds":13.84,"action":"fork","idx":1074,"pos":298,"choice":0,"tries":3}
+{"turn":243,"minute":113.5,"seconds":0.49,"action":"weight","idx":306,"marks":[{"pos":462,"w":1}]}
+{"turn":243,"minute":113.5,"seconds":0.19,"action":"keep","idx":306}
+{"turn":243,"minute":113.5,"seconds":0.6,"action":"keep","idx":532}
+{"turn":243,"minute":113.5,"seconds":0.54,"action":"keep","idx":596}
+{"turn":243,"minute":113.5,"seconds":0.11,"action":"keep","idx":889}
+{"turn":243,"minute":113.5,"seconds":0.12,"action":"keep","idx":499}
+{"turn":243,"minute":113.5,"seconds":0.26,"action":"open","idx":1120}
+{"turn":243,"minute":113.5,"seconds":0.26,"action":"open","idx":1146}
+{"turn":243,"minute":113.5,"seconds":0.32,"action":"open","idx":1202}
+{"turn":243,"minute":113.5,"seconds":0.36,"action":"open","idx":1266}
+{"turn":243,"minute":113.5,"seconds":0.39,"action":"open","idx":1280}
+{"turn":254,"minute":113.8,"seconds":8.88,"action":"fork","idx":1120,"pos":84,"new":" Since","tries":3}
+{"turn":254,"minute":113.8,"seconds":8.74,"action":"fork","idx":1146,"pos":29,"new":" array","tries":3}
+{"turn":254,"minute":113.8,"seconds":0.15,"action":"fork","idx":1202,"pos":97,"new":" minimum","tries":3}
+{"turn":254,"minute":113.8,"seconds":11.79,"action":"fork","idx":1266,"pos":15,"new":" total","tries":3}
+{"turn":254,"minute":113.8,"seconds":11.66,"action":"fork","idx":1280,"pos":73,"new":" given","tries":3}
+{"turn":259,"minute":114.1,"seconds":0.22,"action":"keep","idx":1120}
+{"turn":259,"minute":114.1,"seconds":0.23,"action":"keep","idx":1266}
+{"turn":259,"minute":114.1,"seconds":2.7,"action":"fork","idx":1280,"pos":207,"new":"From","tries":3}
+{"turn":259,"minute":114.1,"seconds":17.53,"action":"fork","idx":1202,"pos":98,"new":" minimum","tries":3}
+{"turn":259,"minute":114.1,"seconds":0.14,"action":"discard","idx":1146}
+{"turn":259,"minute":114.1,"seconds":6.98,"action":"fork","idx":1146,"pos":39,"new":" rows","tries":3}
+{"turn":265,"minute":114.5,"seconds":0.13,"action":"keep","idx":1280}
+{"turn":265,"minute":114.5,"seconds":4.28,"action":"fork","idx":1146,"pos":179,"new":" step","down":1,"tries":3}
+{"turn":265,"minute":114.5,"seconds":12.22,"action":"fork","idx":1202,"pos":123,"new":".","tries":3}
+{"turn":268,"minute":114.6,"seconds":1.91,"action":"fork","idx":1146,"pos":231,"new":"Using","tries":3}
+{"turn":269,"minute":128.6,"seconds":0.07,"action":"keep","idx":1146}
+{"turn":269,"minute":128.6,"seconds":831.79,"action":"train","only":[306,532,596,889,499,1120,1266,1280,1146],"steps":6,"lr":1.5e-07,"validate":6}
+{"turn":271,"minute":129.4,"seconds":8.02,"action":"pose","subject":"intermediate_algebra","problem":"How many real solutions does the equation $\\sqrt{3x+10}=x-2$ have?"}
+{"turn":271,"minute":129.4,"seconds":4.0,"action":"pose","subject":"algebra","problem":"Find the sum of all real solutions of $\\frac{x^2-1}{x-1}=x^2-3x+4$."}
+{"turn":271,"minute":129.4,"seconds":8.23,"action":"pose","subject":"intermediate_algebra","problem":"For which real $a$ is there exactly one real $t$ satisfying $-1\\le t^2+4t+a\\le 3$?"}
+{"turn":271,"minute":129.4,"seconds":8.23,"action":"pose","subject":"intermediate_algebra","problem":"Find the sum of all real solutions of $\\log_2(x-4)+\\log_2(x+2)=4$."}
+{"turn":271,"minute":129.4,"seconds":5.64,"action":"pose","subject":"number_theory","problem":"How many positive integers $k\\le 600$ make $18k$ a perfect square?"}
+{"turn":271,"minute":129.4,"seconds":5.37,"action":"pose","subject":"precalculus","problem":"For $0\\le t<2\\pi$, how many solutions are there to $\\sin(2t)=\\sin t$?"}
+{"turn":277,"minute":129.7,"seconds":10.02,"action":"fork","idx":2002,"pos":47,"new":" vertex","up":0,"tries":3}
+{"turn":277,"minute":129.7,"seconds":0.27,"action":"weight","idx":2000,"marks":[{"pos":327,"w":1},{"pos":334,"w":1}]}
+{"turn":277,"minute":129.7,"seconds":0.49,"action":"keep","idx":2000}
+{"turn":277,"minute":129.7,"seconds":0.28,"action":"weight","idx":2001,"marks":[{"pos":95,"w":1},{"pos":207,"w":1}]}
+{"turn":277,"minute":129.7,"seconds":0.25,"action":"keep","idx":2001}
+{"turn":277,"minute":129.7,"seconds":0.32,"action":"weight","idx":2003,"marks":[{"pos":515,"w":1},{"pos":666,"w":1}]}
+{"turn":277,"minute":129.7,"seconds":0.21,"action":"keep","idx":2003}
+{"turn":277,"minute":129.7,"seconds":0.69,"action":"weight","idx":2004,"marks":[{"pos":102,"w":1},{"pos":129,"w":1},{"pos":235,"w":1}]}
+{"turn":277,"minute":129.7,"seconds":0.1,"action":"keep","idx":2004}
+{"turn":277,"minute":129.7,"seconds":0.34,"action":"weight","idx":2005,"marks":[{"pos":90,"w":1},{"pos":121,"w":1}]}
+{"turn":277,"minute":129.7,"seconds":0.19,"action":"keep","idx":2005}
+{"turn":277,"minute":129.7,"seconds":0.12,"action":"open","idx":594}
+{"turn":277,"minute":129.7,"seconds":0.13,"action":"open","idx":563}
+{"turn":277,"minute":129.7,"seconds":0.16,"action":"open","idx":996}
+{"turn":291,"minute":129.9,"seconds":4.32,"action":"fork","idx":594,"pos":126,"new":"\n","tries":3}
+{"turn":291,"minute":129.9,"seconds":6.61,"action":"fork","idx":996,"pos":484,"new":" Let","tries":3}
+{"turn":291,"minute":129.9,"seconds":6.91,"action":"fork","idx":563,"pos":43,"new":" whenever","tries":3}
+{"turn":291,"minute":129.9,"seconds":9.99,"action":"fork","idx":2002,"pos":50,"new":" quadratic","tries":3}
+{"turn":295,"minute":131.8,"seconds":0.21,"action":"keep","idx":594}
+{"turn":295,"minute":131.8,"seconds":0.21,"action":"weight","idx":996,"marks":[{"pos":570,"w":1}]}
+{"turn":295,"minute":131.8,"seconds":0.14,"action":"keep","idx":996}
+{"turn":295,"minute":131.8,"seconds":5.21,"action":"fork","idx":563,"pos":128,"new":" multiples","tries":3}
+{"turn":295,"minute":131.8,"seconds":4.06,"action":"fork","idx":2002,"pos":126,"new":" upper","tries":3}
+{"turn":300,"minute":135.0,"seconds":1.89,"action":"fork","idx":2002,"pos":271,"new":" violated","up":0,"tries":2}
+{"turn":300,"minute":135.0,"seconds":5.36,"action":"fork","idx":563,"pos":180,"new":" $(","tries":3}
+{"turn":302,"minute":145.9,"seconds":0.07,"action":"keep","idx":2002}
+{"turn":302,"minute":145.9,"seconds":642.7,"action":"train","only":[2000,2001,2002,2003,2004,2005,594,996],"steps":6,"lr":1.5e-07,"validate":4}
+{"turn":304,"minute":163.4,"seconds":1039.16,"action":"train","start":"base","data":"all","only":[224,655,682,194,191,911,553,82,370,32,9,41,306,532,596,889,499,1120,1266,1280,1146,2000,2001,2002,2003,2004,2005,594,996,79,164,120,159,220,374,542],"steps":10,"validate":6}
+{"turn":305,"minute":167.2,"seconds":0.02,"action":"open","idx":488}
+{"turn":305,"minute":167.2,"seconds":0.03,"action":"open","idx":555}
+{"turn":305,"minute":167.2,"seconds":0.1,"action":"open","idx":976}
+{"turn":305,"minute":167.2,"seconds":0.09,"action":"open","idx":1090}
+{"turn":305,"minute":167.2,"seconds":0.12,"action":"open","idx":1010}
+{"turn":305,"minute":167.2,"seconds":0.19,"action":"open","idx":168}
+{"turn":305,"minute":167.2,"seconds":0.04,"action":"open","idx":1121}
+{"turn":305,"minute":167.2,"seconds":0.05,"action":"open","idx":1313}
+{"turn":313,"minute":167.8,"seconds":4.41,"action":"fork","idx":488,"pos":118,"choice":0,"tries":3}
+{"turn":313,"minute":167.8,"seconds":5.39,"action":"fork","idx":555,"pos":30,"new":" division","tries":3}
+{"turn":313,"minute":167.8,"seconds":14.62,"action":"fork","idx":976,"pos":2,"new":" how","tries":3}
+{"turn":313,"minute":167.8,"seconds":3.76,"action":"fork","idx":1090,"pos":720,"new":" integers","tries":3}
+{"turn":313,"minute":167.8,"seconds":21.77,"action":"fork","idx":168,"pos":7,"new":" function","tries":3}
+{"turn":313,"minute":167.8,"seconds":8.51,"action":"fork","idx":1010,"pos":67,"new":"2","tries":3}
+{"turn":313,"minute":167.8,"seconds":3.29,"action":"fork","idx":1121,"pos":138,"new":" Count","tries":3}
+{"turn":313,"minute":167.8,"seconds":0.09,"action":"weight","idx":1313,"marks":[{"pos":176,"w":1},{"pos":46,"w":1}]}
+{"turn":313,"minute":167.8,"seconds":0.04,"action":"keep","idx":1313}
+{"turn":322,"minute":168.1,"seconds":0.3,"action":"keep","idx":488}
+{"turn":322,"minute":168.1,"seconds":0.31,"action":"keep","idx":1090}
+{"turn":322,"minute":168.1,"seconds":0.3,"action":"keep","idx":1010}
+{"turn":322,"minute":168.1,"seconds":3.88,"action":"fork","idx":555,"pos":139,"new":" Since","up":0,"tries":2}
+{"turn":322,"minute":168.1,"seconds":3.43,"action":"fork","idx":976,"pos":239,"new":" For","tries":2}
+{"turn":322,"minute":168.1,"seconds":1.09,"action":"fork","idx":1121,"pos":232,"new":" from","tries":2}
+{"turn":322,"minute":168.1,"seconds":10.68,"action":"fork","idx":168,"pos":68,"new":" calculus","tries":2}
+{"turn":329,"minute":168.4,"seconds":7.49,"action":"fork","idx":168,"pos":440,"choice":0,"tries":2}
+{"turn":329,"minute":168.4,"seconds":1.36,"action":"fork","idx":555,"pos":257,"new":" minimum","tries":2}
+{"turn":329,"minute":168.4,"seconds":0.91,"action":"fork","idx":1121,"pos":233,"new":" -","tries":2}
+{"turn":329,"minute":168.4,"seconds":0.13,"action":"keep","idx":976}
+{"turn":333,"minute":172.2,"seconds":0.78,"action":"fork","idx":555,"pos":257,"new":" minimum","up":0,"tries":1}
+{"turn":333,"minute":172.2,"seconds":0.18,"action":"keep","idx":168}
+{"turn":333,"minute":172.2,"seconds":0.88,"action":"fork","idx":1121,"pos":239,"new":" inclusive","tries":2}
+{"turn":336,"minute":179.3,"seconds":0.07,"action":"keep","idx":555}
+{"turn":336,"minute":179.3,"seconds":402.45,"action":"train","only":[488,1090,1010,1313,168,555,976,577],"lr":1e-07,"steps":5,"pool":50,"validate":2}
+{"turn":338,"minute":179.4,"seconds":0.0,"action":"compare","a":"v7","b":"v9"}
+{"turn":338,"minute":179.4,"seconds":0.0,"action":"compare","a":"v7","b":"v10"}
+{"turn":340,"minute":181.0,"seconds":87.5,"action":"validate","k":3}
+{"turn":341,"minute":181.1,"seconds":0.0,"action":"finish","version":"v7"}

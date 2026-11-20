@@ -1,0 +1,19 @@
+session,judge_model,reasoning_effort,providers,time_limit_minutes,last_reply_minute,replies,actions,judge_tokens,judge_usd,corrections_kept,versions_made,handed_in,validation_gain_points,test_gain_points,test_gain_standard_error,calls_refused_by_content_filter,note
+fable-a,anthropic/claude-fable-5.2,high,Anthropic,180.0,180.1,41,474,1537562,64.799,75,6,v3,5.64,5.05,0.438,46,
+fable-b,anthropic/claude-fable-5.2,high,Anthropic,180.0,180.5,50,445,1437999,50.0318,62,7,v5,6.72,6.31,0.426,31,
+fable-c,anthropic/claude-fable-5.2,high,Anthropic,180.0,180.0,58,519,1638814,63.3124,65,7,v7,6.24,5.37,0.444,62,
+opus-a,anthropic/claude-opus-5.5,high,Azure,180.0,64.7,57,250,806352,10.6137,30,3,v2,5.89,4.23,0.439,84,"wrapped up by the operator 2026-11-20 about 04:40 PST (FINISH file), 110 minutes into its clock, after about 47 minutes blocked without a reply by the content filter (its last reply came at about minute 65). The harness handed in and scored its best validated version."
+opus-b,anthropic/claude-opus-5.5,high,Anthropic Azure,180.0,180.2,84,338,1034107,20.2316,40,6,v2,6.77,5.16,0.431,26,
+opus-c,anthropic/claude-opus-5.5,high,Azure,180.0,188.5,146,379,1093984,25.9563,29,7,v7,6.52,5.45,0.427,42,
+astra-a,openai/gpt-6.2-astra,high,Amazon Bedrock,180.0,181.1,62,341,1311307,30.6125,72,10,v7,2.87,3.34,0.44,0,
+astra-b,openai/gpt-6.2-astra,high,Amazon Bedrock,180.0,180.6,54,419,806674,15.9253,88,9,v5,5.2,4.69,0.45,0,
+astra-c,openai/gpt-6.2-astra,high,Amazon Bedrock,180.0,180.5,86,443,824959,17.4878,93,11,v11,4.44,3.37,0.445,0,
+carbon-a,google/gemini-4-carbon,high,Google Google AI Studio,180.0,181.7,34,507,1885075,14.3611,61,6,v3,5.66,4.42,0.437,0,
+carbon-b,google/gemini-4-carbon,high,Google Google AI Studio,180.0,181.2,54,532,1823362,17.1464,55,6,v6,5.6,5.18,0.433,0,
+neonmed-a,google/gemini-4-neon,medium,Google Google AI Studio,180.0,180.2,28,350,1386332,17.5508,53,7,v3,5.7,4.4,0.433,0,
+neonmed-b,google/gemini-4-neon,medium,Google Google AI Studio,180.0,186.7,27,392,1593354,17.7476,54,5,v4,4.85,4.54,0.431,0,
+neonmed-c,google/gemini-4-neon,medium,Google,180.0,138.1,20,336,1210379,12.438,44,5,v4,5.54,4.23,0.433,0,"stopped by the operator 2026-11-20 at 07:57 PST, 162 minutes into its 180-minute clock, so that its score would be in by 08:30. A wrap-up signal (FINISH file) was placed at 07:45 but the session was inside one long batch of actions and had not reached the point where it is read. Its best validated version, v4, is taken as the version handed in (what the wrap-up signal does); it was scored on the test set by a separate job. The editor did not get a last reply."
+kimi-a2,moonshotai/kimi-k3.1-pro,high,InferenceNet,180.0,180.0,247,835,2247222,12.7627,65,8,v4,6.1,5.16,0.439,0,
+kimi-b2,moonshotai/kimi-k3.1-pro,high,InferenceNet,180.0,180.0,54,279,666778,3.5044,28,11,v1,5.06,3.15,0.442,0,
+deepseek-a,deepseek/deepseek-v4.1-flash,high,Together,180.0,181.8,60,260,1079627,1.5034,9,7,v0,0.0,0.0,0.0,0,
+deepseek-b,deepseek/deepseek-v4.1-flash,high,Together,180.0,180.0,126,345,1023292,1.1789,13,10,v2,3.39,2.51,0.409,0,

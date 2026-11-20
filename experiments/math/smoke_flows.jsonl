@@ -1,0 +1,19 @@
+{"action": "list", "status": "all"}
+{"action": "fork", "idx": 0, "pos": 1, "choice": 1, "write": "all"}
+{"action": "keep", "idx": 0}
+{"flow": 1, "action": "list", "status": "all"}
+{"flow": 1, "action": "open", "idx": 0}
+{"flow": 1, "action": "fork", "idx": 1, "pos": 1, "choice": 1, "write": "all"}
+{"flow": 1, "action": "keep", "idx": 1}
+{"flow": 1, "action": "train", "lr": 1e-07}
+{"flow": 1, "action": "stop"}
+{"flow": 2, "action": "fork", "idx": 2, "pos": 1, "choice": 1, "write": "all"}
+{"flow": 2, "action": "keep", "idx": 2}
+{"flow": 2, "action": "stop"}
+{"action": "wait"}
+{"action": "wait"}
+{"action": "wait"}
+{"action": "wait"}
+{"action": "train", "lr": 1e-07, "steps": 3, "validate": true}
+{"action": "open", "idx": 4}
+{"action": "status"}

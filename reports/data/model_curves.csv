@@ -1,0 +1,334 @@
+axis,model,model_name,x,mean_test_gain_points,sessions,sd_between_sessions,standard_error,confidence_percent,interval_half_width,session_values
+time,fable,Fable 5.2,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+time,fable,Fable 5.2,17.5,1.487,3,2.575,1.487,50,1.213,+0.00 +0.00 +4.46
+time,fable,Fable 5.2,19.3,3.34,3,2.944,1.7,50,1.387,+0.00 +5.56 +4.46
+time,fable,Fable 5.2,37.4,3.497,3,3.128,1.806,50,1.474,+0.00 +6.03 +4.46
+time,fable,Fable 5.2,42.3,4.567,3,1.413,0.816,50,0.666,+3.21 +6.03 +4.46
+time,fable,Fable 5.2,53.3,4.707,3,1.634,0.943,50,0.77,+3.21 +6.45 +4.46
+time,fable,Fable 5.2,54.8,5.1,3,1.686,0.973,50,0.794,+3.21 +6.45 +5.64
+time,fable,Fable 5.2,81.9,5.057,3,1.667,0.962,50,0.785,+3.21 +6.45 +5.51
+time,fable,Fable 5.2,97.6,5.67,3,0.714,0.412,50,0.336,+5.05 +6.45 +5.51
+time,fable,Fable 5.2,113.2,5.447,3,0.875,0.505,50,0.412,+5.05 +6.45 +4.84
+time,fable,Fable 5.2,122.8,5.4,3,0.795,0.459,50,0.375,+5.05 +6.31 +4.84
+time,fable,Fable 5.2,180,5.577,3,0.655,0.378,50,0.309,+5.05 +6.31 +5.37
+time,opus,Opus 5.5,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+time,opus,Opus 5.5,14.8,1.537,3,2.662,1.537,50,1.254,+0.00 +4.61 +0.00
+time,opus,Opus 5.5,16.4,4.63,3,0.062,0.036,50,0.029,+4.58 +4.61 +4.70
+time,opus,Opus 5.5,31.5,4.513,3,0.249,0.144,50,0.118,+4.23 +4.61 +4.70
+time,opus,Opus 5.5,34.3,4.697,3,0.465,0.268,50,0.219,+4.23 +5.16 +4.70
+time,opus,Opus 5.5,49.6,4.817,3,0.511,0.295,50,0.241,+4.23 +5.16 +5.06
+time,opus,Opus 5.5,110,4.817,3,0.511,0.295,50,0.241,+4.23 +5.16 +5.06
+time,opus,Opus 5.5,114.2,4.727,3,0.468,0.27,50,0.221,+4.23 +5.16 +4.79
+time,opus,Opus 5.5,166.7,4.947,3,0.637,0.368,50,0.3,+4.23 +5.16 +5.45
+time,opus,Opus 5.5,180,4.947,3,0.637,0.368,50,0.3,+4.23 +5.16 +5.45
+time,carbon,Gemini 4 Carbon,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+time,carbon,Gemini 4 Carbon,28.9,2.65,2,3.748,2.65,50,2.65,+0.00 +5.30
+time,carbon,Gemini 4 Carbon,33.8,4.83,2,0.665,0.47,50,0.47,+4.36 +5.30
+time,carbon,Gemini 4 Carbon,66.8,5.46,2,0.226,0.16,50,0.16,+5.62 +5.30
+time,carbon,Gemini 4 Carbon,100.2,5.35,2,0.382,0.27,50,0.27,+5.62 +5.08
+time,carbon,Gemini 4 Carbon,157.9,4.75,2,0.467,0.33,50,0.33,+4.42 +5.08
+time,carbon,Gemini 4 Carbon,176.6,4.8,2,0.537,0.38,50,0.38,+4.42 +5.18
+time,carbon,Gemini 4 Carbon,180,4.8,2,0.537,0.38,50,0.38,+4.42 +5.18
+time,kimi,Kimi K3.1 Pro,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+time,kimi,Kimi K3.1 Pro,14.1,1.575,2,2.227,1.575,50,1.575,+0.00 +3.15
+time,kimi,Kimi K3.1 Pro,15.3,3.19,2,0.057,0.04,50,0.04,+3.23 +3.15
+time,kimi,Kimi K3.1 Pro,34.0,4.175,2,1.45,1.025,50,1.025,+5.20 +3.15
+time,kimi,Kimi K3.1 Pro,71.7,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+time,kimi,Kimi K3.1 Pro,180,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+time,neonmed,Gemini 4 Neon (medium),0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+time,neonmed,Gemini 4 Neon (medium),21.7,0.08,3,0.139,0.08,50,0.065,+0.00 +0.24 +0.00
+time,neonmed,Gemini 4 Neon (medium),26.2,1.303,3,2.053,1.185,50,0.967,+0.00 +0.24 +3.67
+time,neonmed,Gemini 4 Neon (medium),49.9,2.737,3,2.24,1.293,50,1.055,+4.57 +0.24 +3.40
+time,neonmed,Gemini 4 Neon (medium),66.7,3.947,3,0.589,0.34,50,0.277,+4.57 +3.87 +3.40
+time,neonmed,Gemini 4 Neon (medium),80.5,3.89,3,0.5,0.289,50,0.236,+4.40 +3.87 +3.40
+time,neonmed,Gemini 4 Neon (medium),92.7,4.167,3,0.271,0.156,50,0.127,+4.40 +3.87 +4.23
+time,neonmed,Gemini 4 Neon (medium),115.1,4.083,3,0.41,0.237,50,0.193,+4.40 +3.62 +4.23
+time,neonmed,Gemini 4 Neon (medium),162,4.083,3,0.41,0.237,50,0.193,+4.40 +3.62 +4.23
+time,neonmed,Gemini 4 Neon (medium),163.9,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+time,neonmed,Gemini 4 Neon (medium),180,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+time,astra,GPT-6.2 Astra,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+time,astra,GPT-6.2 Astra,12.7,-0.76,3,1.316,0.76,50,0.62,-2.28 +0.00 +0.00
+time,astra,GPT-6.2 Astra,41.0,-0.77,3,1.308,0.755,50,0.616,-2.28 +0.00 -0.03
+time,astra,GPT-6.2 Astra,56.2,0.667,3,3.35,1.934,50,1.578,-2.28 +4.31 -0.03
+time,astra,GPT-6.2 Astra,60.9,1.853,3,2.226,1.285,50,1.049,+1.28 +4.31 -0.03
+time,astra,GPT-6.2 Astra,83.8,2.443,3,1.633,0.943,50,0.769,+1.28 +4.31 +1.74
+time,astra,GPT-6.2 Astra,110.3,2.71,3,1.396,0.806,50,0.658,+2.08 +4.31 +1.74
+time,astra,GPT-6.2 Astra,111.7,2.923,3,1.21,0.699,50,0.57,+2.08 +4.31 +2.38
+time,astra,GPT-6.2 Astra,128.6,3.343,3,0.965,0.557,50,0.455,+3.34 +4.31 +2.38
+time,astra,GPT-6.2 Astra,145.9,3.06,3,1.084,0.626,50,0.511,+2.49 +4.31 +2.38
+time,astra,GPT-6.2 Astra,178.3,3.39,3,0.91,0.525,50,0.429,+2.49 +4.31 +3.37
+time,astra,GPT-6.2 Astra,179.3,3.587,3,0.643,0.371,50,0.303,+3.08 +4.31 +3.37
+time,astra,GPT-6.2 Astra,180,3.8,3,0.771,0.445,50,0.363,+3.34 +4.69 +3.37
+time,deepseek,DeepSeek v4.1 flash,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+time,deepseek,DeepSeek v4.1 flash,65.4,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+time,deepseek,DeepSeek v4.1 flash,180,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+judge,fable,Fable 5.2,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+judge,fable,Fable 5.2,0.4153,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+judge,fable,Fable 5.2,0.5062,1.853,3,3.21,1.853,50,1.512,+0.00 +5.56 +0.00
+judge,fable,Fable 5.2,0.5292,4.41,3,1.176,0.679,50,0.554,+3.21 +5.56 +4.46
+judge,fable,Fable 5.2,0.9035,4.567,3,1.413,0.816,50,0.666,+3.21 +6.03 +4.46
+judge,fable,Fable 5.2,0.9899,4.96,3,1.528,0.882,50,0.72,+3.21 +6.03 +5.64
+judge,fable,Fable 5.2,1.1493,4.96,3,1.528,0.882,50,0.72,+3.21 +6.03 +5.64
+judge,fable,Fable 5.2,1.3753,5.67,3,0.714,0.412,50,0.336,+5.05 +6.45 +5.51
+judge,fable,Fable 5.2,1.4242,5.447,3,0.875,0.505,50,0.412,+5.05 +6.45 +4.84
+judge,fable,Fable 5.2,1.4334,5.4,3,0.795,0.459,50,0.375,+5.05 +6.31 +4.84
+judge,fable,Fable 5.2,1.5196,5.4,3,0.795,0.459,50,0.375,+5.05 +6.31 +4.84
+judge,fable,Fable 5.2,1.6197,5.4,3,0.795,0.459,50,0.375,+5.05 +6.31 +4.84
+judge,fable,Fable 5.2,2.23479,5.577,3,0.655,0.378,50,0.309,+5.05 +6.31 +5.37
+judge,opus,Opus 5.5,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+judge,opus,Opus 5.5,0.1469,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+judge,opus,Opus 5.5,0.1862,3.063,3,2.653,1.532,50,1.25,+4.58 +4.61 +0.00
+judge,opus,Opus 5.5,0.248,3.063,3,2.653,1.532,50,1.25,+4.58 +4.61 +0.00
+judge,opus,Opus 5.5,0.3275,4.513,3,0.249,0.144,50,0.118,+4.23 +4.61 +4.70
+judge,opus,Opus 5.5,0.6203,4.513,3,0.249,0.144,50,0.118,+4.23 +4.61 +4.70
+judge,opus,Opus 5.5,0.7048,4.817,3,0.511,0.295,50,0.241,+4.23 +5.16 +5.06
+judge,opus,Opus 5.5,0.7301,4.817,3,0.511,0.295,50,0.241,+4.23 +5.16 +5.06
+judge,opus,Opus 5.5,0.9984,4.817,3,0.511,0.295,50,0.241,+4.23 +5.16 +5.06
+judge,opus,Opus 5.5,1.0213,4.817,3,0.511,0.295,50,0.241,+4.23 +5.16 +5.06
+judge,opus,Opus 5.5,1.0342,4.727,3,0.468,0.27,50,0.221,+4.23 +5.16 +4.79
+judge,opus,Opus 5.5,2.23479,4.947,3,0.637,0.368,50,0.3,+4.23 +5.16 +5.45
+judge,carbon,Gemini 4 Carbon,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+judge,carbon,Gemini 4 Carbon,0.6468,2.65,2,3.748,2.65,50,2.65,+0.00 +5.30
+judge,carbon,Gemini 4 Carbon,0.6845,4.83,2,0.665,0.47,50,0.47,+4.36 +5.30
+judge,carbon,Gemini 4 Carbon,1.2861,5.46,2,0.226,0.16,50,0.16,+5.62 +5.30
+judge,carbon,Gemini 4 Carbon,1.5758,5.46,2,0.226,0.16,50,0.16,+5.62 +5.30
+judge,carbon,Gemini 4 Carbon,1.8121,5.35,2,0.382,0.27,50,0.27,+5.62 +5.08
+judge,carbon,Gemini 4 Carbon,1.857,5.4,2,0.311,0.22,50,0.22,+5.62 +5.18
+judge,carbon,Gemini 4 Carbon,2.23479,4.8,2,0.537,0.38,50,0.38,+4.42 +5.18
+judge,kimi,Kimi K3.1 Pro,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+judge,kimi,Kimi K3.1 Pro,0.1403,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+judge,kimi,Kimi K3.1 Pro,0.1633,1.615,2,2.284,1.615,50,1.615,+3.23 +0.00
+judge,kimi,Kimi K3.1 Pro,0.4632,3.19,2,0.057,0.04,50,0.04,+3.23 +3.15
+judge,kimi,Kimi K3.1 Pro,0.664,4.175,2,1.45,1.025,50,1.025,+5.20 +3.15
+judge,kimi,Kimi K3.1 Pro,0.9542,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+judge,kimi,Kimi K3.1 Pro,2.2348,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+judge,neonmed,Gemini 4 Neon (medium),0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+judge,neonmed,Gemini 4 Neon (medium),0.1292,0.08,3,0.139,0.08,50,0.065,+0.00 +0.24 +0.00
+judge,neonmed,Gemini 4 Neon (medium),0.1509,1.303,3,2.053,1.185,50,0.967,+0.00 +0.24 +3.67
+judge,neonmed,Gemini 4 Neon (medium),0.2989,2.827,3,2.285,1.319,50,1.076,+4.57 +0.24 +3.67
+judge,neonmed,Gemini 4 Neon (medium),0.4393,2.827,3,2.285,1.319,50,1.076,+4.57 +0.24 +3.67
+judge,neonmed,Gemini 4 Neon (medium),0.4681,4.037,3,0.473,0.273,50,0.223,+4.57 +3.87 +3.67
+judge,neonmed,Gemini 4 Neon (medium),0.8188,4.223,3,0.35,0.202,50,0.165,+4.57 +3.87 +4.23
+judge,neonmed,Gemini 4 Neon (medium),1.001,4.223,3,0.35,0.202,50,0.165,+4.57 +3.87 +4.23
+judge,neonmed,Gemini 4 Neon (medium),1.0688,4.083,3,0.41,0.237,50,0.193,+4.40 +3.62 +4.23
+judge,neonmed,Gemini 4 Neon (medium),1.2104,4.083,3,0.41,0.237,50,0.193,+4.40 +3.62 +4.23
+judge,neonmed,Gemini 4 Neon (medium),1.3727,4.083,3,0.41,0.237,50,0.193,+4.40 +3.62 +4.23
+judge,neonmed,Gemini 4 Neon (medium),1.5876,4.083,3,0.41,0.237,50,0.193,+4.40 +3.62 +4.23
+judge,neonmed,Gemini 4 Neon (medium),2.23479,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+judge,astra,GPT-6.2 Astra,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+judge,astra,GPT-6.2 Astra,0.14,-0.76,3,1.316,0.76,50,0.62,-2.28 +0.00 +0.00
+judge,astra,GPT-6.2 Astra,0.1924,0.817,3,3.576,2.064,50,1.685,-2.28 +4.73 +0.00
+judge,astra,GPT-6.2 Astra,0.2915,0.807,3,3.579,2.066,50,1.686,-2.28 +4.73 -0.03
+judge,astra,GPT-6.2 Astra,0.4701,0.667,3,3.35,1.934,50,1.578,-2.28 +4.31 -0.03
+judge,astra,GPT-6.2 Astra,0.4854,2.443,3,1.633,0.943,50,0.769,+1.28 +4.31 +1.74
+judge,astra,GPT-6.2 Astra,0.6507,2.443,3,1.633,0.943,50,0.769,+1.28 +4.31 +1.74
+judge,astra,GPT-6.2 Astra,0.8019,2.783,3,1.74,1.005,50,0.82,+1.28 +4.69 +2.38
+judge,astra,GPT-6.2 Astra,0.8216,2.783,3,1.74,1.005,50,0.82,+1.28 +4.69 +2.38
+judge,astra,GPT-6.2 Astra,0.9598,3.8,3,0.771,0.445,50,0.363,+3.34 +4.69 +3.37
+judge,astra,GPT-6.2 Astra,1.1076,3.8,3,0.771,0.445,50,0.363,+3.34 +4.69 +3.37
+judge,astra,GPT-6.2 Astra,1.3078,3.8,3,0.771,0.445,50,0.363,+3.34 +4.69 +3.37
+judge,astra,GPT-6.2 Astra,2.23479,3.8,3,0.771,0.445,50,0.363,+3.34 +4.69 +3.37
+judge,deepseek,DeepSeek v4.1 flash,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+judge,deepseek,DeepSeek v4.1 flash,0.8341,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+judge,deepseek,DeepSeek v4.1 flash,1.007,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+judge,deepseek,DeepSeek v4.1 flash,1.077,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+judge,deepseek,DeepSeek v4.1 flash,2.23479,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+student,fable,Fable 5.2,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student,fable,Fable 5.2,1.1875,1.487,3,2.575,1.487,50,1.213,+0.00 +0.00 +4.46
+student,fable,Fable 5.2,1.6465,4.41,3,1.176,0.679,50,0.554,+3.21 +5.56 +4.46
+student,fable,Fable 5.2,2.4185,4.803,3,1.38,0.797,50,0.65,+3.21 +5.56 +5.64
+student,fable,Fable 5.2,3.6496,4.96,3,1.528,0.882,50,0.72,+3.21 +6.03 +5.64
+student,fable,Fable 5.2,5.6592,5.67,3,0.714,0.412,50,0.336,+5.05 +6.45 +5.51
+student,fable,Fable 5.2,6.9608,5.4,3,0.795,0.459,50,0.375,+5.05 +6.31 +4.84
+student,fable,Fable 5.2,8.924,5.4,3,0.795,0.459,50,0.375,+5.05 +6.31 +4.84
+student,fable,Fable 5.2,11.8337,5.577,3,0.655,0.378,50,0.309,+5.05 +6.31 +5.37
+student,fable,Fable 5.2,17.3608,5.577,3,0.655,0.378,50,0.309,+5.05 +6.31 +5.37
+student,fable,Fable 5.2,20.05957,5.577,3,0.655,0.378,50,0.309,+5.05 +6.31 +5.37
+student,opus,Opus 5.5,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student,opus,Opus 5.5,1.1532,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student,opus,Opus 5.5,2.3758,4.513,3,0.249,0.144,50,0.118,+4.23 +4.61 +4.70
+student,opus,Opus 5.5,2.4834,4.697,3,0.465,0.268,50,0.219,+4.23 +5.16 +4.70
+student,opus,Opus 5.5,3.5274,4.697,3,0.465,0.268,50,0.219,+4.23 +5.16 +4.70
+student,opus,Opus 5.5,6.4425,4.817,3,0.511,0.295,50,0.241,+4.23 +5.16 +5.06
+student,opus,Opus 5.5,6.6693,4.817,3,0.511,0.295,50,0.241,+4.23 +5.16 +5.06
+student,opus,Opus 5.5,15.0341,4.727,3,0.468,0.27,50,0.221,+4.23 +5.16 +4.79
+student,opus,Opus 5.5,20.05957,4.947,3,0.637,0.368,50,0.3,+4.23 +5.16 +5.45
+student,carbon,Gemini 4 Carbon,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student,carbon,Gemini 4 Carbon,1.1992,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student,carbon,Gemini 4 Carbon,1.5739,4.83,2,0.665,0.47,50,0.47,+4.36 +5.30
+student,carbon,Gemini 4 Carbon,2.4479,4.83,2,0.665,0.47,50,0.47,+4.36 +5.30
+student,carbon,Gemini 4 Carbon,4.0155,5.46,2,0.226,0.16,50,0.16,+5.62 +5.30
+student,carbon,Gemini 4 Carbon,6.5295,5.35,2,0.382,0.27,50,0.27,+5.62 +5.08
+student,carbon,Gemini 4 Carbon,10.5471,4.8,2,0.537,0.38,50,0.38,+4.42 +5.18
+student,carbon,Gemini 4 Carbon,20.05957,4.8,2,0.537,0.38,50,0.38,+4.42 +5.18
+student,kimi,Kimi K3.1 Pro,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student,kimi,Kimi K3.1 Pro,1.1644,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student,kimi,Kimi K3.1 Pro,2.3529,3.19,2,0.057,0.04,50,0.04,+3.23 +3.15
+student,kimi,Kimi K3.1 Pro,4.8781,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+student,kimi,Kimi K3.1 Pro,13.0924,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+student,kimi,Kimi K3.1 Pro,20.0596,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+student,neonmed,Gemini 4 Neon (medium),0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student,neonmed,Gemini 4 Neon (medium),1.1586,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student,neonmed,Gemini 4 Neon (medium),2.3293,2.737,3,2.24,1.293,50,1.055,+4.57 +0.24 +3.40
+student,neonmed,Gemini 4 Neon (medium),3.5781,3.89,3,0.5,0.289,50,0.236,+4.40 +3.87 +3.40
+student,neonmed,Gemini 4 Neon (medium),4.3353,3.807,3,0.525,0.303,50,0.248,+4.40 +3.62 +3.40
+student,neonmed,Gemini 4 Neon (medium),4.6619,3.807,3,0.525,0.303,50,0.248,+4.40 +3.62 +3.40
+student,neonmed,Gemini 4 Neon (medium),5.5745,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+student,neonmed,Gemini 4 Neon (medium),5.8551,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+student,neonmed,Gemini 4 Neon (medium),8.396,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+student,neonmed,Gemini 4 Neon (medium),20.05957,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+student,astra,GPT-6.2 Astra,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student,astra,GPT-6.2 Astra,1.1622,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student,astra,GPT-6.2 Astra,2.2938,-0.77,3,1.308,0.755,50,0.616,-2.28 +0.00 -0.03
+student,astra,GPT-6.2 Astra,2.6887,-0.77,3,1.308,0.755,50,0.616,-2.28 +0.00 -0.03
+student,astra,GPT-6.2 Astra,3.4942,0.807,3,3.579,2.066,50,1.686,-2.28 +4.73 -0.03
+student,astra,GPT-6.2 Astra,4.2523,1.993,3,2.459,1.42,50,1.158,+1.28 +4.73 -0.03
+student,astra,GPT-6.2 Astra,5.833,2.443,3,1.633,0.943,50,0.769,+1.28 +4.31 +1.74
+student,astra,GPT-6.2 Astra,7.0035,2.443,3,1.633,0.943,50,0.769,+1.28 +4.31 +1.74
+student,astra,GPT-6.2 Astra,8.5752,2.71,3,1.396,0.806,50,0.658,+2.08 +4.31 +1.74
+student,astra,GPT-6.2 Astra,9.7406,3.343,3,0.965,0.557,50,0.455,+3.34 +4.31 +2.38
+student,astra,GPT-6.2 Astra,11.8595,3.343,3,0.965,0.557,50,0.455,+3.34 +4.31 +2.38
+student,astra,GPT-6.2 Astra,15.9877,3.673,3,0.552,0.318,50,0.26,+3.34 +4.31 +3.37
+student,astra,GPT-6.2 Astra,17.0294,3.8,3,0.771,0.445,50,0.363,+3.34 +4.69 +3.37
+student,astra,GPT-6.2 Astra,20.05957,3.8,3,0.771,0.445,50,0.363,+3.34 +4.69 +3.37
+student,deepseek,DeepSeek v4.1 flash,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student,deepseek,DeepSeek v4.1 flash,2.7968,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+student,deepseek,DeepSeek v4.1 flash,7.92,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+student,deepseek,DeepSeek v4.1 flash,12.2885,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+student,deepseek,DeepSeek v4.1 flash,20.05957,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+student-excl-validation,fable,Fable 5.2,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-excl-validation,fable,Fable 5.2,0.0465,1.07,3,1.853,1.07,50,0.873,+3.21 +0.00 +0.00
+student-excl-validation,fable,Fable 5.2,0.3875,2.557,3,2.301,1.328,50,1.084,+3.21 +0.00 +4.46
+student-excl-validation,fable,Fable 5.2,0.5248,5.023,3,0.55,0.318,50,0.259,+5.05 +5.56 +4.46
+student-excl-validation,fable,Fable 5.2,0.8185,5.417,3,0.32,0.185,50,0.151,+5.05 +5.56 +5.64
+student-excl-validation,fable,Fable 5.2,1.2496,5.573,3,0.493,0.285,50,0.232,+5.05 +6.03 +5.64
+student-excl-validation,fable,Fable 5.2,1.3124,5.53,3,0.49,0.283,50,0.231,+5.05 +6.03 +5.51
+student-excl-validation,fable,Fable 5.2,1.4337,5.67,3,0.714,0.412,50,0.336,+5.05 +6.45 +5.51
+student-excl-validation,fable,Fable 5.2,1.6592,5.67,3,0.714,0.412,50,0.336,+5.05 +6.45 +5.51
+student-excl-validation,fable,Fable 5.2,2.1608,5.4,3,0.795,0.459,50,0.375,+5.05 +6.31 +4.84
+student-excl-validation,fable,Fable 5.2,2.524,5.4,3,0.795,0.459,50,0.375,+5.05 +6.31 +4.84
+student-excl-validation,fable,Fable 5.2,4.28846,5.577,3,0.655,0.378,50,0.309,+5.05 +6.31 +5.37
+student-excl-validation,opus,Opus 5.5,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-excl-validation,opus,Opus 5.5,0.3532,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-excl-validation,opus,Opus 5.5,0.3963,3.093,3,2.68,1.547,50,1.262,+4.58 +0.00 +4.70
+student-excl-validation,opus,Opus 5.5,0.4456,4.63,3,0.062,0.036,50,0.029,+4.58 +4.61 +4.70
+student-excl-validation,opus,Opus 5.5,0.7758,4.513,3,0.249,0.144,50,0.118,+4.23 +4.61 +4.70
+student-excl-validation,opus,Opus 5.5,0.8834,4.697,3,0.465,0.268,50,0.219,+4.23 +5.16 +4.70
+student-excl-validation,opus,Opus 5.5,1.1274,4.697,3,0.465,0.268,50,0.219,+4.23 +5.16 +4.70
+student-excl-validation,opus,Opus 5.5,1.1605,4.817,3,0.511,0.295,50,0.241,+4.23 +5.16 +5.06
+student-excl-validation,opus,Opus 5.5,1.6425,4.817,3,0.511,0.295,50,0.241,+4.23 +5.16 +5.06
+student-excl-validation,opus,Opus 5.5,1.8693,4.817,3,0.511,0.295,50,0.241,+4.23 +5.16 +5.06
+student-excl-validation,opus,Opus 5.5,2.2341,4.727,3,0.468,0.27,50,0.221,+4.23 +5.16 +4.79
+student-excl-validation,opus,Opus 5.5,4.28846,4.947,3,0.637,0.368,50,0.3,+4.23 +5.16 +5.45
+student-excl-validation,carbon,Gemini 4 Carbon,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student-excl-validation,carbon,Gemini 4 Carbon,0.3992,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student-excl-validation,carbon,Gemini 4 Carbon,0.7739,4.83,2,0.665,0.47,50,0.47,+4.36 +5.30
+student-excl-validation,carbon,Gemini 4 Carbon,0.8479,4.83,2,0.665,0.47,50,0.47,+4.36 +5.30
+student-excl-validation,carbon,Gemini 4 Carbon,1.6155,5.46,2,0.226,0.16,50,0.16,+5.62 +5.30
+student-excl-validation,carbon,Gemini 4 Carbon,1.7295,5.35,2,0.382,0.27,50,0.27,+5.62 +5.08
+student-excl-validation,carbon,Gemini 4 Carbon,2.5471,4.8,2,0.537,0.38,50,0.38,+4.42 +5.18
+student-excl-validation,carbon,Gemini 4 Carbon,4.28846,4.8,2,0.537,0.38,50,0.38,+4.42 +5.18
+student-excl-validation,kimi,Kimi K3.1 Pro,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student-excl-validation,kimi,Kimi K3.1 Pro,0.3644,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student-excl-validation,kimi,Kimi K3.1 Pro,0.4431,1.615,2,2.284,1.615,50,1.615,+3.23 +0.00
+student-excl-validation,kimi,Kimi K3.1 Pro,0.7529,3.19,2,0.057,0.04,50,0.04,+3.23 +3.15
+student-excl-validation,kimi,Kimi K3.1 Pro,1.6781,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+student-excl-validation,kimi,Kimi K3.1 Pro,3.2596,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+student-excl-validation,kimi,Kimi K3.1 Pro,3.4924,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+student-excl-validation,kimi,Kimi K3.1 Pro,4.28846,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+student-excl-validation,neonmed,Gemini 4 Neon (medium),0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-excl-validation,neonmed,Gemini 4 Neon (medium),0.3586,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-excl-validation,neonmed,Gemini 4 Neon (medium),0.7293,2.737,3,2.24,1.293,50,1.055,+4.57 +0.24 +3.40
+student-excl-validation,neonmed,Gemini 4 Neon (medium),1.1353,3.863,3,0.622,0.359,50,0.293,+4.57 +3.62 +3.40
+student-excl-validation,neonmed,Gemini 4 Neon (medium),1.1781,3.807,3,0.525,0.303,50,0.248,+4.40 +3.62 +3.40
+student-excl-validation,neonmed,Gemini 4 Neon (medium),1.4619,3.807,3,0.525,0.303,50,0.248,+4.40 +3.62 +3.40
+student-excl-validation,neonmed,Gemini 4 Neon (medium),1.5745,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+student-excl-validation,neonmed,Gemini 4 Neon (medium),1.596,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+student-excl-validation,neonmed,Gemini 4 Neon (medium),1.8551,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+student-excl-validation,neonmed,Gemini 4 Neon (medium),4.28846,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+student-excl-validation,astra,GPT-6.2 Astra,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-excl-validation,astra,GPT-6.2 Astra,0.3622,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-excl-validation,astra,GPT-6.2 Astra,0.6887,-0.76,3,1.316,0.76,50,0.62,-2.28 +0.00 +0.00
+student-excl-validation,astra,GPT-6.2 Astra,1.0523,0.807,3,3.579,2.066,50,1.686,-2.28 +4.73 -0.03
+student-excl-validation,astra,GPT-6.2 Astra,1.0942,0.667,3,3.35,1.934,50,1.578,-2.28 +4.31 -0.03
+student-excl-validation,astra,GPT-6.2 Astra,1.833,2.443,3,1.633,0.943,50,0.769,+1.28 +4.31 +1.74
+student-excl-validation,astra,GPT-6.2 Astra,2.2035,2.443,3,1.633,0.943,50,0.769,+1.28 +4.31 +1.74
+student-excl-validation,astra,GPT-6.2 Astra,2.5752,2.71,3,1.396,0.806,50,0.658,+2.08 +4.31 +1.74
+student-excl-validation,astra,GPT-6.2 Astra,2.6255,3.13,3,1.298,0.749,50,0.611,+3.34 +4.31 +1.74
+student-excl-validation,astra,GPT-6.2 Astra,2.9406,3.343,3,0.965,0.557,50,0.455,+3.34 +4.31 +2.38
+student-excl-validation,astra,GPT-6.2 Astra,3.4294,3.187,3,1.303,0.752,50,0.614,+2.49 +4.69 +2.38
+student-excl-validation,astra,GPT-6.2 Astra,3.4595,3.47,3,1.16,0.67,50,0.547,+3.34 +4.69 +2.38
+student-excl-validation,astra,GPT-6.2 Astra,4.1877,3.8,3,0.771,0.445,50,0.363,+3.34 +4.69 +3.37
+student-excl-validation,astra,GPT-6.2 Astra,4.28846,3.8,3,0.771,0.445,50,0.363,+3.34 +4.69 +3.37
+student-excl-validation,deepseek,DeepSeek v4.1 flash,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student-excl-validation,deepseek,DeepSeek v4.1 flash,1.1968,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+student-excl-validation,deepseek,DeepSeek v4.1 flash,2.32,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+student-excl-validation,deepseek,DeepSeek v4.1 flash,4.2885,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+student-forks-only,fable,Fable 5.2,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-forks-only,fable,Fable 5.2,0.0307,1.487,3,2.575,1.487,50,1.213,+0.00 +0.00 +4.46
+student-forks-only,fable,Fable 5.2,0.0355,1.487,3,2.575,1.487,50,1.213,+0.00 +0.00 +4.46
+student-forks-only,fable,Fable 5.2,0.0465,4.41,3,1.176,0.679,50,0.554,+3.21 +5.56 +4.46
+student-forks-only,fable,Fable 5.2,0.0677,4.567,3,1.413,0.816,50,0.666,+3.21 +6.03 +4.46
+student-forks-only,fable,Fable 5.2,0.0745,4.96,3,1.528,0.882,50,0.72,+3.21 +6.03 +5.64
+student-forks-only,fable,Fable 5.2,0.096,4.96,3,1.528,0.882,50,0.72,+3.21 +6.03 +5.64
+student-forks-only,fable,Fable 5.2,0.1128,4.833,3,1.62,0.935,50,0.763,+3.21 +6.45 +4.84
+student-forks-only,fable,Fable 5.2,0.1168,5.623,3,0.734,0.424,50,0.346,+5.05 +6.45 +5.37
+student-forks-only,fable,Fable 5.2,0.1192,5.577,3,0.655,0.378,50,0.309,+5.05 +6.31 +5.37
+student-forks-only,fable,Fable 5.2,0.1553,5.577,3,0.655,0.378,50,0.309,+5.05 +6.31 +5.37
+student-forks-only,fable,Fable 5.2,0.30198,5.577,3,0.655,0.378,50,0.309,+5.05 +6.31 +5.37
+student-forks-only,opus,Opus 5.5,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-forks-only,opus,Opus 5.5,0.0124,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-forks-only,opus,Opus 5.5,0.0187,4.63,3,0.062,0.036,50,0.029,+4.58 +4.61 +4.70
+student-forks-only,opus,Opus 5.5,0.0206,4.513,3,0.249,0.144,50,0.118,+4.23 +4.61 +4.70
+student-forks-only,opus,Opus 5.5,0.037,4.697,3,0.465,0.268,50,0.219,+4.23 +5.16 +4.70
+student-forks-only,opus,Opus 5.5,0.0405,4.697,3,0.465,0.268,50,0.219,+4.23 +5.16 +4.70
+student-forks-only,opus,Opus 5.5,0.0426,4.697,3,0.465,0.268,50,0.219,+4.23 +5.16 +4.70
+student-forks-only,opus,Opus 5.5,0.0549,4.817,3,0.511,0.295,50,0.241,+4.23 +5.16 +5.06
+student-forks-only,opus,Opus 5.5,0.30198,4.947,3,0.637,0.368,50,0.3,+4.23 +5.16 +5.45
+student-forks-only,carbon,Gemini 4 Carbon,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student-forks-only,carbon,Gemini 4 Carbon,0.0456,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student-forks-only,carbon,Gemini 4 Carbon,0.0603,4.83,2,0.665,0.47,50,0.47,+4.36 +5.30
+student-forks-only,carbon,Gemini 4 Carbon,0.1087,4.83,2,0.665,0.47,50,0.47,+4.36 +5.30
+student-forks-only,carbon,Gemini 4 Carbon,0.1419,5.46,2,0.226,0.16,50,0.16,+5.62 +5.30
+student-forks-only,carbon,Gemini 4 Carbon,0.1567,5.35,2,0.382,0.27,50,0.27,+5.62 +5.08
+student-forks-only,carbon,Gemini 4 Carbon,0.1599,4.8,2,0.537,0.38,50,0.38,+4.42 +5.18
+student-forks-only,carbon,Gemini 4 Carbon,0.30198,4.8,2,0.537,0.38,50,0.38,+4.42 +5.18
+student-forks-only,kimi,Kimi K3.1 Pro,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student-forks-only,kimi,Kimi K3.1 Pro,0.0111,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student-forks-only,kimi,Kimi K3.1 Pro,0.0284,1.575,2,2.227,1.575,50,1.575,+0.00 +3.15
+student-forks-only,kimi,Kimi K3.1 Pro,0.0649,3.19,2,0.057,0.04,50,0.04,+3.23 +3.15
+student-forks-only,kimi,Kimi K3.1 Pro,0.0724,4.175,2,1.45,1.025,50,1.025,+5.20 +3.15
+student-forks-only,kimi,Kimi K3.1 Pro,0.1341,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+student-forks-only,kimi,Kimi K3.1 Pro,0.302,4.155,2,1.421,1.005,50,1.005,+5.16 +3.15
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.0184,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.0274,0.08,3,0.139,0.08,50,0.065,+0.00 +0.24 +0.00
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.0318,1.303,3,2.053,1.185,50,0.967,+0.00 +0.24 +3.67
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.0375,4.037,3,0.473,0.273,50,0.223,+4.57 +3.87 +3.67
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.0525,3.947,3,0.589,0.34,50,0.277,+4.57 +3.87 +3.40
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.0665,3.863,3,0.622,0.359,50,0.293,+4.57 +3.62 +3.40
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.0683,3.863,3,0.622,0.359,50,0.293,+4.57 +3.62 +3.40
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.0725,4.083,3,0.41,0.237,50,0.193,+4.40 +3.62 +4.23
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.0871,4.083,3,0.41,0.237,50,0.193,+4.40 +3.62 +4.23
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.1,4.083,3,0.41,0.237,50,0.193,+4.40 +3.62 +4.23
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.1169,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+student-forks-only,neonmed,Gemini 4 Neon (medium),0.30198,4.39,3,0.155,0.09,50,0.073,+4.40 +4.54 +4.23
+student-forks-only,astra,GPT-6.2 Astra,0.0,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-forks-only,astra,GPT-6.2 Astra,0.0151,0.0,3,0.0,0.0,50,0.0,+0.00 +0.00 +0.00
+student-forks-only,astra,GPT-6.2 Astra,0.0214,1.567,3,2.74,1.582,50,1.291,+0.00 +4.73 -0.03
+student-forks-only,astra,GPT-6.2 Astra,0.0267,0.807,3,3.579,2.066,50,1.686,-2.28 +4.73 -0.03
+student-forks-only,astra,GPT-6.2 Astra,0.0506,1.257,3,3.321,1.918,50,1.565,-2.28 +4.31 +1.74
+student-forks-only,astra,GPT-6.2 Astra,0.0558,1.257,3,3.321,1.918,50,1.565,-2.28 +4.31 +1.74
+student-forks-only,astra,GPT-6.2 Astra,0.0751,2.443,3,1.633,0.943,50,0.769,+1.28 +4.31 +1.74
+student-forks-only,astra,GPT-6.2 Astra,0.0902,2.783,3,1.74,1.005,50,0.82,+1.28 +4.69 +2.38
+student-forks-only,astra,GPT-6.2 Astra,0.0915,2.783,3,1.74,1.005,50,0.82,+1.28 +4.69 +2.38
+student-forks-only,astra,GPT-6.2 Astra,0.0949,3.38,3,1.305,0.753,50,0.615,+2.08 +4.69 +3.37
+student-forks-only,astra,GPT-6.2 Astra,0.1096,3.38,3,1.305,0.753,50,0.615,+2.08 +4.69 +3.37
+student-forks-only,astra,GPT-6.2 Astra,0.1182,3.8,3,0.771,0.445,50,0.363,+3.34 +4.69 +3.37
+student-forks-only,astra,GPT-6.2 Astra,0.1283,3.8,3,0.771,0.445,50,0.363,+3.34 +4.69 +3.37
+student-forks-only,astra,GPT-6.2 Astra,0.30198,3.8,3,0.771,0.445,50,0.363,+3.34 +4.69 +3.37
+student-forks-only,deepseek,DeepSeek v4.1 flash,0.0,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student-forks-only,deepseek,DeepSeek v4.1 flash,0.0288,0.0,2,0.0,0.0,50,0.0,+0.00 +0.00
+student-forks-only,deepseek,DeepSeek v4.1 flash,0.0336,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+student-forks-only,deepseek,DeepSeek v4.1 flash,0.0453,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51
+student-forks-only,deepseek,DeepSeek v4.1 flash,0.30198,1.255,2,1.775,1.255,50,1.255,+0.00 +2.51

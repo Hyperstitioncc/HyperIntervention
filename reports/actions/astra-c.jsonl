@@ -1,0 +1,443 @@
+{"turn":1,"minute":0.0,"seconds":0.0,"action":"list","status":"sometimes"}
+{"turn":2,"minute":0.1,"seconds":0.04,"action":"open","idx":3}
+{"turn":2,"minute":0.1,"seconds":0.07,"action":"open","idx":16}
+{"turn":2,"minute":0.1,"seconds":0.05,"action":"open","idx":32}
+{"turn":2,"minute":0.1,"seconds":0.06,"action":"open","idx":51}
+{"turn":2,"minute":0.1,"seconds":0.07,"action":"open","idx":83}
+{"turn":7,"minute":0.3,"seconds":6.76,"action":"fork","idx":3,"pos":1,"choice":0,"write":"all","tries":3}
+{"turn":7,"minute":0.3,"seconds":7.18,"action":"fork","idx":32,"pos":47,"new":" total","write":"all","tries":3}
+{"turn":7,"minute":0.3,"seconds":4.95,"action":"fork","idx":51,"pos":48,"new":" using","write":"all","tries":3}
+{"turn":7,"minute":0.3,"seconds":0.11,"action":"weight","idx":83,"marks":[{"pos":0,"w":1},{"pos":13,"w":1}]}
+{"turn":7,"minute":0.3,"seconds":0.09,"action":"keep","idx":83}
+{"turn":7,"minute":0.3,"seconds":0.08,"action":"look","idx":16,"from":138,"to":141}
+{"turn":13,"minute":0.5,"seconds":0.13,"action":"keep","idx":3}
+{"turn":13,"minute":0.5,"seconds":0.12,"action":"weight","idx":32,"marks":[{"pos":84,"w":1}]}
+{"turn":13,"minute":0.5,"seconds":0.09,"action":"keep","idx":32}
+{"turn":13,"minute":0.5,"seconds":6.34,"action":"fork","idx":16,"pos":139,"new":" pairs","write":"all","tries":3}
+{"turn":13,"minute":0.5,"seconds":2.59,"action":"fork","idx":51,"pos":130,"new":":\n\n","write":"all","tries":3}
+{"turn":13,"minute":0.5,"seconds":0.08,"action":"open","idx":41}
+{"turn":13,"minute":0.5,"seconds":0.08,"action":"open","idx":153}
+{"turn":13,"minute":0.5,"seconds":0.1,"action":"open","idx":203}
+{"turn":21,"minute":0.7,"seconds":3.05,"action":"fork","idx":16,"pos":223,"new":" There","write":"all","tries":3}
+{"turn":21,"minute":0.7,"seconds":0.12,"action":"keep","idx":51}
+{"turn":21,"minute":0.7,"seconds":4.56,"action":"fork","idx":41,"pos":101,"new":",","write":"all","tries":3}
+{"turn":21,"minute":0.7,"seconds":2.64,"action":"fork","idx":153,"pos":93,"new":" =","write":"all","tries":3}
+{"turn":21,"minute":0.7,"seconds":6.04,"action":"fork","idx":203,"pos":13,"new":" Fix","write":"all","tries":3}
+{"turn":21,"minute":0.7,"seconds":0.01,"action":"list","status":"right"}
+{"turn":27,"minute":0.9,"seconds":0.15,"action":"keep","idx":41}
+{"turn":27,"minute":0.9,"seconds":0.15,"action":"keep","idx":153}
+{"turn":27,"minute":0.9,"seconds":3.73,"action":"fork","idx":203,"pos":17,"new":" position","write":"all","tries":3}
+{"turn":27,"minute":0.9,"seconds":0.01,"action":"look","idx":44,"from":0,"to":5}
+{"turn":27,"minute":0.9,"seconds":0.08,"action":"look","idx":143,"from":0,"to":5}
+{"turn":27,"minute":0.9,"seconds":0.03,"action":"look","idx":158,"from":0,"to":5}
+{"turn":27,"minute":0.9,"seconds":0.05,"action":"look","idx":200,"from":0,"to":5}
+{"turn":27,"minute":0.9,"seconds":0.1,"action":"look","idx":107,"from":0,"to":5}
+{"turn":27,"minute":0.9,"seconds":0.11,"action":"look","idx":139,"from":0,"to":5}
+{"turn":27,"minute":0.9,"seconds":0.07,"action":"look","idx":106,"from":0,"to":5}
+{"turn":27,"minute":0.9,"seconds":0.09,"action":"look","idx":230,"from":0,"to":5}
+{"turn":38,"minute":1.2,"seconds":2.33,"action":"fork","idx":203,"pos":95,"new":"So","write":"all","tries":3}
+{"turn":38,"minute":1.2,"seconds":0.01,"action":"open","idx":44}
+{"turn":38,"minute":1.2,"seconds":3.26,"action":"fork","idx":200,"pos":0,"new":"Since","write":"all","tries":3}
+{"turn":38,"minute":1.2,"seconds":8.25,"action":"fork","idx":230,"pos":0,"new":"The","write":"all","tries":3}
+{"turn":38,"minute":1.2,"seconds":8.66,"action":"fork","idx":139,"pos":0,"new":"The","write":"all","tries":3}
+{"turn":43,"minute":1.4,"seconds":0.11,"action":"weight","idx":44,"marks":[{"pos":0,"w":1},{"pos":15,"w":1}]}
+{"turn":43,"minute":1.4,"seconds":0.08,"action":"keep","idx":44}
+{"turn":43,"minute":1.4,"seconds":0.1,"action":"keep","idx":200}
+{"turn":43,"minute":1.4,"seconds":0.1,"action":"weight","idx":230,"marks":[{"pos":149,"w":1}]}
+{"turn":43,"minute":1.4,"seconds":0.09,"action":"keep","idx":230}
+{"turn":43,"minute":1.4,"seconds":8.58,"action":"fork","idx":203,"pos":109,"new":"!","write":"all","tries":3}
+{"turn":43,"minute":1.4,"seconds":0.39,"action":"fork","idx":139,"pos":286,"new":"\\","write":"all","tries":3}
+{"turn":50,"minute":11.8,"seconds":0.08,"action":"keep","idx":203}
+{"turn":50,"minute":11.8,"seconds":0.09,"action":"keep","idx":139}
+{"turn":50,"minute":11.8,"seconds":618.43,"action":"train","lr":2e-07,"steps":10,"hold":"end","validate":4}
+{"turn":53,"minute":11.9,"seconds":0.03,"action":"open","idx":139}
+{"turn":53,"minute":11.9,"seconds":0.02,"action":"open","idx":186}
+{"turn":53,"minute":11.9,"seconds":0.03,"action":"open","idx":164}
+{"turn":53,"minute":11.9,"seconds":0.04,"action":"open","idx":83}
+{"turn":57,"minute":27.9,"seconds":942.23,"action":"use","version":"v0"}
+{"turn":57,"minute":27.9,"seconds":0.0,"action":"list","status":"right","subject":"intermediate_algebra"}
+{"turn":59,"minute":28.0,"seconds":0.07,"action":"open","idx":536}
+{"turn":59,"minute":28.0,"seconds":0.06,"action":"open","idx":121}
+{"turn":59,"minute":28.0,"seconds":0.12,"action":"open","idx":157}
+{"turn":59,"minute":28.0,"seconds":0.15,"action":"open","idx":215}
+{"turn":59,"minute":28.0,"seconds":0.14,"action":"open","idx":220}
+{"turn":59,"minute":28.0,"seconds":0.21,"action":"open","idx":624}
+{"turn":65,"minute":28.2,"seconds":0.47,"action":"weight","idx":536,"marks":[{"pos":19,"w":1},{"pos":68,"w":1},{"pos":335,"w":1}]}
+{"turn":65,"minute":28.2,"seconds":0.12,"action":"keep","idx":536}
+{"turn":65,"minute":28.2,"seconds":0.31,"action":"weight","idx":121,"marks":[{"pos":283,"w":1},{"pos":345,"w":1},{"pos":412,"w":1}]}
+{"turn":65,"minute":28.2,"seconds":0.17,"action":"keep","idx":121}
+{"turn":65,"minute":28.2,"seconds":10.12,"action":"fork","idx":215,"pos":8,"new":" coordinate","write":"all","tries":3}
+{"turn":65,"minute":28.2,"seconds":5.19,"action":"fork","idx":220,"pos":320,"new":" coefficients","write":"all","tries":3}
+{"turn":65,"minute":28.2,"seconds":0.19,"action":"open","idx":162}
+{"turn":65,"minute":28.2,"seconds":0.23,"action":"open","idx":256}
+{"turn":65,"minute":28.2,"seconds":0.14,"action":"open","idx":135}
+{"turn":65,"minute":28.2,"seconds":0.17,"action":"open","idx":155}
+{"turn":75,"minute":28.6,"seconds":11.15,"action":"fork","idx":135,"pos":214,"new":"\\[","write":"all","tries":3}
+{"turn":75,"minute":28.6,"seconds":6.96,"action":"fork","idx":256,"pos":287,"new":" By","write":"all","tries":3}
+{"turn":75,"minute":28.6,"seconds":4.25,"action":"fork","idx":215,"pos":472,"new":" Since","write":"all","tries":3}
+{"turn":75,"minute":28.6,"seconds":0.2,"action":"weight","idx":220,"marks":[{"pos":412,"w":1}]}
+{"turn":75,"minute":28.6,"seconds":0.12,"action":"keep","idx":220}
+{"turn":75,"minute":28.6,"seconds":0.22,"action":"weight","idx":155,"marks":[{"pos":51,"w":1},{"pos":87,"w":1},{"pos":180,"w":1}]}
+{"turn":75,"minute":28.6,"seconds":0.07,"action":"keep","idx":155}
+{"turn":75,"minute":28.6,"seconds":0.16,"action":"look","idx":162,"from":653,"to":655}
+{"turn":83,"minute":28.7,"seconds":0.25,"action":"weight","idx":135,"marks":[{"pos":193,"w":1},{"pos":252,"w":1}]}
+{"turn":83,"minute":28.7,"seconds":0.17,"action":"keep","idx":135}
+{"turn":83,"minute":28.7,"seconds":0.15,"action":"weight","idx":256,"marks":[{"pos":291,"w":1}]}
+{"turn":83,"minute":28.7,"seconds":0.12,"action":"keep","idx":256}
+{"turn":83,"minute":28.7,"seconds":1.28,"action":"fork","idx":215,"pos":532,"new":"So","write":"all","tries":3}
+{"turn":83,"minute":28.7,"seconds":0.48,"action":"fork","idx":162,"pos":654,"new":"]","write":"all","tries":3,"up":0}
+{"turn":89,"minute":41.0,"seconds":0.13,"action":"keep","idx":215}
+{"turn":89,"minute":41.0,"seconds":0.24,"action":"weight","idx":162,"marks":[{"pos":35,"w":1},{"pos":135,"w":1},{"pos":512,"w":1}]}
+{"turn":89,"minute":41.0,"seconds":0.13,"action":"keep","idx":162}
+{"turn":89,"minute":41.0,"seconds":736.31,"action":"train","only":[32,41,51,153,203,536,121,220,155,135,256,215,162],"hold":"rest","steps":9,"lr":2e-07,"validate":4}
+{"turn":93,"minute":41.2,"seconds":0.01,"action":"list","status":"sometimes","subject":"algebra"}
+{"turn":93,"minute":41.2,"seconds":0.0,"action":"list","status":"sometimes","subject":"number_theory"}
+{"turn":95,"minute":41.2,"seconds":0.04,"action":"open","idx":2}
+{"turn":95,"minute":41.2,"seconds":0.04,"action":"open","idx":239}
+{"turn":95,"minute":41.2,"seconds":0.04,"action":"open","idx":291}
+{"turn":95,"minute":41.2,"seconds":0.02,"action":"open","idx":447}
+{"turn":95,"minute":41.2,"seconds":0.06,"action":"open","idx":555}
+{"turn":95,"minute":41.2,"seconds":0.07,"action":"open","idx":164}
+{"turn":101,"minute":41.4,"seconds":3.83,"action":"fork","idx":239,"pos":46,"new":" meals","tries":3}
+{"turn":101,"minute":41.4,"seconds":2.08,"action":"fork","idx":291,"pos":64,"new":"9","tries":3}
+{"turn":101,"minute":41.4,"seconds":2.67,"action":"fork","idx":555,"pos":108,"new":"4","tries":3}
+{"turn":101,"minute":41.4,"seconds":4.56,"action":"fork","idx":447,"pos":19,"new":" start","tries":3}
+{"turn":101,"minute":41.4,"seconds":2.34,"action":"fork","idx":164,"pos":62,"new":" divide","tries":3}
+{"turn":101,"minute":41.4,"seconds":0.09,"action":"open","idx":79}
+{"turn":101,"minute":41.4,"seconds":0.11,"action":"open","idx":495}
+{"turn":108,"minute":41.7,"seconds":0.15,"action":"keep","idx":291}
+{"turn":108,"minute":41.7,"seconds":0.15,"action":"keep","idx":555}
+{"turn":108,"minute":41.7,"seconds":5.69,"action":"fork","idx":239,"pos":51,"new":"2","tries":3}
+{"turn":108,"minute":41.7,"seconds":1.53,"action":"fork","idx":164,"pos":89,"new":"4","tries":3}
+{"turn":108,"minute":41.7,"seconds":5.73,"action":"fork","idx":447,"pos":21,"new":" finding","tries":3}
+{"turn":108,"minute":41.7,"seconds":14.78,"action":"fork","idx":495,"pos":71,"new":" Factor","up":0,"tries":3}
+{"turn":108,"minute":41.7,"seconds":10.77,"action":"fork","idx":79,"pos":8,"new":" find","down":1,"tries":3}
+{"turn":115,"minute":42.0,"seconds":4.18,"action":"fork","idx":239,"pos":52,"new":" meals","tries":3}
+{"turn":115,"minute":42.0,"seconds":5.86,"action":"fork","idx":447,"pos":152,"new":" go","down":2,"tries":3}
+{"turn":115,"minute":42.0,"seconds":11.57,"action":"fork","idx":79,"pos":93,"new":"First","tries":3}
+{"turn":115,"minute":42.0,"seconds":2.83,"action":"fork","idx":164,"pos":83,"new":" Since","tries":3}
+{"turn":115,"minute":42.0,"seconds":0.17,"action":"look","idx":495,"from":72,"to":75}
+{"turn":115,"minute":42.0,"seconds":0.04,"action":"open","idx":1128}
+{"turn":115,"minute":42.0,"seconds":0.07,"action":"open","idx":1112}
+{"turn":122,"minute":42.3,"seconds":0.19,"action":"keep","idx":239}
+{"turn":122,"minute":42.3,"seconds":0.47,"action":"weight","idx":164,"marks":[{"pos":96,"w":1},{"pos":120,"w":1}]}
+{"turn":122,"minute":42.3,"seconds":0.13,"action":"keep","idx":164}
+{"turn":122,"minute":42.3,"seconds":3.43,"action":"fork","idx":447,"pos":219,"new":" Increase","tries":3}
+{"turn":122,"minute":42.3,"seconds":4.61,"action":"fork","idx":1128,"pos":180,"new":"\\[","tries":3}
+{"turn":122,"minute":42.3,"seconds":2.99,"action":"fork","idx":1112,"pos":199,"new":"3","tries":3}
+{"turn":122,"minute":42.3,"seconds":13.76,"action":"fork","idx":495,"pos":72,"new":" both","up":0,"tries":3}
+{"turn":122,"minute":42.3,"seconds":12.41,"action":"fork","idx":79,"pos":151,"new":"The","tries":3}
+{"turn":130,"minute":42.7,"seconds":0.19,"action":"keep","idx":447}
+{"turn":130,"minute":42.7,"seconds":0.13,"action":"keep","idx":1112}
+{"turn":130,"minute":42.7,"seconds":1.68,"action":"fork","idx":1128,"pos":289,"new":" not","tries":3}
+{"turn":130,"minute":42.7,"seconds":10.46,"action":"fork","idx":495,"pos":164,"new":" we","tries":3}
+{"turn":130,"minute":42.7,"seconds":15.63,"action":"fork","idx":79,"pos":156,"new":" proceeds","tries":3}
+{"turn":130,"minute":42.7,"seconds":0.11,"action":"open","idx":194}
+{"turn":130,"minute":42.7,"seconds":0.15,"action":"open","idx":589}
+{"turn":137,"minute":42.9,"seconds":0.12,"action":"keep","idx":1128}
+{"turn":137,"minute":42.9,"seconds":7.16,"action":"fork","idx":495,"pos":175,"new":" (","tries":3}
+{"turn":137,"minute":42.9,"seconds":0.36,"action":"fork","idx":79,"pos":652,"new":"]","up":0,"tries":3}
+{"turn":137,"minute":42.9,"seconds":8.24,"action":"fork","idx":194,"pos":427,"new":"Exp","down":0,"tries":3}
+{"turn":137,"minute":42.9,"seconds":11.31,"action":"fork","idx":589,"pos":411,"new":" solve","down":1,"tries":3}
+{"turn":142,"minute":54.8,"seconds":0.18,"action":"keep","idx":495}
+{"turn":142,"minute":54.8,"seconds":0.3,"action":"weight","idx":79,"marks":[{"pos":240,"w":1},{"pos":356,"w":1},{"pos":434,"w":1}]}
+{"turn":142,"minute":54.8,"seconds":0.12,"action":"keep","idx":79}
+{"turn":142,"minute":54.8,"seconds":706.57,"action":"train","only":[291,555,239,164,447,1112,1128,495,79],"hold":"rest","lr":2e-07,"steps":9,"validate":4}
+{"turn":146,"minute":54.9,"seconds":0.01,"action":"list","status":"sometimes","subject":"precalculus"}
+{"turn":147,"minute":55.1,"seconds":0.01,"action":"open","idx":1131}
+{"turn":147,"minute":55.1,"seconds":0.09,"action":"open","idx":382}
+{"turn":147,"minute":55.1,"seconds":0.06,"action":"open","idx":682}
+{"turn":147,"minute":55.1,"seconds":0.07,"action":"open","idx":577}
+{"turn":147,"minute":55.1,"seconds":0.07,"action":"open","idx":1494}
+{"turn":147,"minute":55.1,"seconds":9.47,"action":"open","idx":9}
+{"turn":153,"minute":55.4,"seconds":2.97,"action":"fork","idx":1131,"pos":23,"new":"Rec","tries":3}
+{"turn":153,"minute":55.4,"seconds":12.51,"action":"fork","idx":1494,"pos":26,"new":"1","tries":3}
+{"turn":153,"minute":55.4,"seconds":3.35,"action":"fork","idx":577,"pos":327,"new":"However","tries":3}
+{"turn":153,"minute":55.4,"seconds":0.05,"action":"look","idx":382,"from":202,"to":210}
+{"turn":153,"minute":55.4,"seconds":0.09,"action":"look","idx":682,"from":365,"to":371}
+{"turn":153,"minute":55.4,"seconds":0.31,"action":"weight","idx":9,"marks":[{"pos":9,"w":1},{"pos":330,"w":1},{"pos":550,"w":1}]}
+{"turn":153,"minute":55.4,"seconds":0.21,"action":"keep","idx":9}
+{"turn":153,"minute":55.4,"seconds":11.74,"action":"open","idx":1007}
+{"turn":153,"minute":55.4,"seconds":8.13,"action":"open","idx":115}
+{"turn":153,"minute":55.4,"seconds":7.62,"action":"open","idx":172}
+{"turn":163,"minute":55.8,"seconds":1.79,"action":"fork","idx":1131,"pos":26,"new":" the","tries":3}
+{"turn":163,"minute":55.8,"seconds":12.9,"action":"fork","idx":1494,"pos":38,"new":" geometric","tries":3}
+{"turn":163,"minute":55.8,"seconds":0.25,"action":"fork","idx":577,"pos":376,"new":"}}","tries":3,"up":0}
+{"turn":163,"minute":55.8,"seconds":6.25,"action":"fork","idx":1007,"pos":85,"new":"1","tries":3}
+{"turn":163,"minute":55.8,"seconds":5.55,"action":"fork","idx":682,"pos":371,"new":"impl","tries":3}
+{"turn":163,"minute":55.8,"seconds":4.79,"action":"fork","idx":382,"pos":178,"new":" alternate","tries":3}
+{"turn":163,"minute":55.8,"seconds":1.07,"action":"fork","idx":115,"pos":107,"new":" Therefore","tries":3}
+{"turn":163,"minute":55.8,"seconds":0.23,"action":"weight","idx":172,"marks":[{"pos":33,"w":1},{"pos":368,"w":1}]}
+{"turn":163,"minute":55.8,"seconds":0.09,"action":"keep","idx":172}
+{"turn":172,"minute":56.1,"seconds":0.19,"action":"keep","idx":1007}
+{"turn":172,"minute":56.1,"seconds":0.2,"action":"keep","idx":577}
+{"turn":172,"minute":56.1,"seconds":0.19,"action":"keep","idx":115}
+{"turn":172,"minute":56.1,"seconds":0.19,"action":"weight","idx":682,"marks":[{"pos":511,"w":1}]}
+{"turn":172,"minute":56.1,"seconds":0.13,"action":"keep","idx":682}
+{"turn":172,"minute":56.1,"seconds":6.25,"action":"fork","idx":1131,"pos":61,"new":"Since","tries":3}
+{"turn":172,"minute":56.1,"seconds":7.25,"action":"fork","idx":1494,"pos":27,"new":"3","tries":3}
+{"turn":172,"minute":56.1,"seconds":10.74,"action":"open","idx":103}
+{"turn":172,"minute":56.1,"seconds":5.54,"action":"open","idx":542}
+{"turn":172,"minute":56.1,"seconds":8.12,"action":"open","idx":293}
+{"turn":172,"minute":56.1,"seconds":3.26,"action":"open","idx":347}
+{"turn":183,"minute":56.3,"seconds":3.33,"action":"fork","idx":1494,"pos":144,"new":" to","tries":3}
+{"turn":183,"minute":56.3,"seconds":1.57,"action":"fork","idx":1131,"pos":63,"new":" range","tries":3}
+{"turn":183,"minute":56.3,"seconds":4.34,"action":"fork","idx":293,"pos":178,"new":"5","tries":3}
+{"turn":183,"minute":56.3,"seconds":6.26,"action":"fork","idx":103,"pos":163,"new":" therefore","tries":3}
+{"turn":183,"minute":56.3,"seconds":0.08,"action":"weight","idx":347,"marks":[{"pos":9,"w":1}]}
+{"turn":183,"minute":56.3,"seconds":0.01,"action":"keep","idx":347}
+{"turn":183,"minute":56.3,"seconds":0.01,"action":"list","status":"sometimes","subject":"counting_and_probability"}
+{"turn":190,"minute":56.4,"seconds":0.14,"action":"keep","idx":1131}
+{"turn":190,"minute":56.4,"seconds":0.1,"action":"weight","idx":293,"marks":[{"pos":74,"w":1}]}
+{"turn":190,"minute":56.4,"seconds":0.08,"action":"keep","idx":293}
+{"turn":190,"minute":56.4,"seconds":0.24,"action":"fork","idx":103,"pos":205,"new":"$.","up":0,"tries":3}
+{"turn":190,"minute":56.4,"seconds":1.12,"action":"fork","idx":1494,"pos":150,"new":"\\[","tries":3}
+{"turn":195,"minute":70.4,"seconds":0.06,"action":"keep","idx":103}
+{"turn":195,"minute":70.4,"seconds":0.05,"action":"keep","idx":1494}
+{"turn":195,"minute":70.4,"seconds":827.45,"action":"train","start":"base","data":"all","exclude":[3,44,83,139,200,230],"optimizer":"sgd","embeddings":"freeze","lr":2e-07,"steps":9,"hold":"rest","validate":4}
+{"turn":198,"minute":71.3,"seconds":4.35,"action":"pose","subject":"counting_and_probability","problem":"Two fair six-sided dice are rolled. Given that their sum is a multiple of 4, find the probability that the dice show the same number. Give a reduced fraction."}
+{"turn":198,"minute":71.3,"seconds":9.45,"action":"pose","subject":"number_theory","problem":"How many positive multiples of 7 less than 200 have a decimal units digit of 1 or 3?"}
+{"turn":198,"minute":71.3,"seconds":13.61,"action":"pose","subject":"algebra","problem":"Let $u_0=2$ and $u_{n+1}=u_n^2-2$ for $n\\ge0$. What is the value of $u_1+u_2+\\cdots+u_{20}$?"}
+{"turn":198,"minute":71.3,"seconds":12.82,"action":"pose","subject":"counting_and_probability","problem":"A fair red die and a fair blue die, each labeled 1 through 6, are rolled. What is the probability that the product shown is exactly 3 times the sum shown?"}
+{"turn":198,"minute":71.3,"seconds":2.43,"action":"open","idx":289}
+{"turn":198,"minute":71.3,"seconds":0.09,"action":"open","idx":563}
+{"turn":198,"minute":71.3,"seconds":0.1,"action":"open","idx":647}
+{"turn":205,"minute":72.1,"seconds":10.16,"action":"fork","idx":2001,"pos":29,"new":" list","tries":3}
+{"turn":205,"minute":72.1,"seconds":10.98,"action":"fork","idx":2003,"pos":45,"new":" Let","tries":3}
+{"turn":205,"minute":72.1,"seconds":5.68,"action":"fork","idx":647,"pos":48,"new":"5","tries":3}
+{"turn":205,"minute":72.1,"seconds":0.1,"action":"weight","idx":2002,"marks":[{"pos":57,"w":1},{"pos":99,"w":1}]}
+{"turn":205,"minute":72.1,"seconds":0.1,"action":"keep","idx":2002}
+{"turn":205,"minute":72.1,"seconds":0.15,"action":"fork","idx":2000,"pos":273,"new":"}}","up":0,"tries":2}
+{"turn":205,"minute":72.1,"seconds":0.2,"action":"weight","idx":289,"marks":[{"pos":41,"w":1},{"pos":64,"w":1}]}
+{"turn":205,"minute":72.1,"seconds":0.03,"action":"keep","idx":289}
+{"turn":205,"minute":72.1,"seconds":4.32,"action":"pose","subject":"number_theory","problem":"How many ordered pairs $(a,b)$ of positive integers satisfy $ab=2a+2b+8$?"}
+{"turn":205,"minute":72.1,"seconds":4.39,"action":"pose","subject":"algebra","problem":"The sequence $b_1,b_2,\\ldots$ has $b_1=3$ and $b_{n+1}=|b_n-5|$ for every positive integer $n$. What is the sum of its first 33 terms?"}
+{"turn":205,"minute":72.1,"seconds":3.74,"action":"pose","subject":"counting_and_probability","problem":"Given that two fair six-sided dice show distinct numbers, what is the probability that their sum is divisible by 5?"}
+{"turn":216,"minute":72.4,"seconds":0.3,"action":"weight","idx":2000,"marks":[{"pos":10,"w":1},{"pos":73,"w":1}]}
+{"turn":216,"minute":72.4,"seconds":0.16,"action":"keep","idx":2000}
+{"turn":216,"minute":72.4,"seconds":0.29,"action":"weight","idx":2003,"marks":[{"pos":182,"w":1},{"pos":248,"w":1}]}
+{"turn":216,"minute":72.4,"seconds":0.12,"action":"keep","idx":2003}
+{"turn":216,"minute":72.4,"seconds":0.3,"action":"keep","idx":647}
+{"turn":216,"minute":72.4,"seconds":0.28,"action":"weight","idx":2004,"marks":[{"pos":35,"w":1},{"pos":227,"w":1}]}
+{"turn":216,"minute":72.4,"seconds":0.17,"action":"keep","idx":2004}
+{"turn":216,"minute":72.4,"seconds":0.68,"action":"fork","idx":2005,"pos":252,"new":"So","tries":3}
+{"turn":216,"minute":72.4,"seconds":0.3,"action":"weight","idx":2006,"marks":[{"pos":19,"w":1},{"pos":180,"w":1}]}
+{"turn":216,"minute":72.4,"seconds":0.15,"action":"keep","idx":2006}
+{"turn":216,"minute":72.4,"seconds":10.38,"action":"fork","idx":2001,"pos":56,"new":":","tries":3}
+{"turn":227,"minute":83.8,"seconds":0.05,"action":"weight","idx":2005,"marks":[{"pos":182,"w":1}]}
+{"turn":227,"minute":83.8,"seconds":0.05,"action":"keep","idx":2005}
+{"turn":227,"minute":83.8,"seconds":672.53,"action":"train","only":[2000,2002,2003,2004,2005,2006,289,647],"steps":8,"lr":2e-07,"hold":"rest","validate":4}
+{"turn":230,"minute":84.0,"seconds":2.94,"action":"open","idx":374}
+{"turn":230,"minute":84.0,"seconds":5.6,"action":"open","idx":897}
+{"turn":230,"minute":84.0,"seconds":0.04,"action":"open","idx":1121}
+{"turn":230,"minute":84.0,"seconds":0.14,"action":"open","idx":911}
+{"turn":230,"minute":84.0,"seconds":0.16,"action":"open","idx":1047}
+{"turn":230,"minute":84.0,"seconds":0.06,"action":"open","idx":596}
+{"turn":230,"minute":84.0,"seconds":0.22,"action":"open","idx":1311}
+{"turn":237,"minute":84.5,"seconds":6.02,"action":"fork","idx":596,"pos":19,"new":" ABC","tries":3}
+{"turn":237,"minute":84.5,"seconds":12.76,"action":"fork","idx":911,"pos":36,"new":" First","tries":3}
+{"turn":237,"minute":84.5,"seconds":23.05,"action":"fork","idx":897,"pos":75,"new":" figure","tries":3}
+{"turn":237,"minute":84.5,"seconds":5.14,"action":"fork","idx":1047,"pos":214,"new":" \\","tries":3}
+{"turn":237,"minute":84.5,"seconds":17.86,"action":"fork","idx":1311,"pos":47,"new":" common","tries":3}
+{"turn":237,"minute":84.5,"seconds":0.2,"action":"look","idx":1121,"from":215,"to":217}
+{"turn":243,"minute":85.0,"seconds":0.21,"action":"weight","idx":911,"marks":[{"pos":31,"w":1}]}
+{"turn":243,"minute":85.0,"seconds":0.09,"action":"keep","idx":911}
+{"turn":243,"minute":85.0,"seconds":0.09,"action":"keep","idx":596}
+{"turn":243,"minute":85.0,"seconds":1.05,"action":"fork","idx":1121,"pos":215,"new":"Count","tries":3}
+{"turn":243,"minute":85.0,"seconds":5.85,"action":"fork","idx":1047,"pos":224,"new":" can","tries":3}
+{"turn":243,"minute":85.0,"seconds":4.84,"action":"fork","idx":897,"pos":89,"new":"2","tries":3}
+{"turn":243,"minute":85.0,"seconds":0.18,"action":"look","idx":1311,"from":213,"to":219}
+{"turn":243,"minute":85.0,"seconds":0.11,"action":"weight","idx":374,"marks":[{"pos":103,"w":1},{"pos":195,"w":1}]}
+{"turn":243,"minute":85.0,"seconds":0.06,"action":"keep","idx":374}
+{"turn":243,"minute":85.0,"seconds":8.3,"action":"pose","subject":"geometry","problem":"In triangle $PQR$, $PQ=PR$. The bisector of angle $PQR$ meets $PR$ at $T$, and $QT=RT$. Find the measure of angle $P$ in degrees."}
+{"turn":253,"minute":86.0,"seconds":1.74,"action":"fork","idx":1047,"pos":274,"new":"3","up":0,"tries":3}
+{"turn":253,"minute":86.0,"seconds":9.42,"action":"fork","idx":1311,"pos":216,"new":"(k","up":0,"tries":3}
+{"turn":253,"minute":86.0,"seconds":11.13,"action":"pose","subject":"algebra","problem":"For all real $x$, $(ux+3)(vx-2)=18x^2+3x-6$. Evaluate $2uv+5$."}
+{"turn":253,"minute":86.0,"seconds":3.31,"action":"pose","subject":"number_theory","problem":"How many integers $n$ satisfy $-37<3n+2\\le 59$?"}
+{"turn":253,"minute":86.0,"seconds":4.09,"action":"pose","subject":"intermediate_algebra","problem":"Evaluate the infinite series $\\displaystyle\\sum_{n=2}^{\\infty}\\frac{n}{(n+1)!}$."}
+{"turn":253,"minute":86.0,"seconds":14.5,"action":"pose","subject":"geometry","problem":"An isosceles triangle $ABC$ has $AB=AC$. The bisector of $\\angle ABC$ meets $AC$ at $D$ and $AD=BD$. Find $\\angle BAC$ in degrees."}
+{"turn":253,"minute":86.0,"seconds":5.04,"action":"pose","subject":"counting_and_probability","problem":"A rectangular sheet has two straight vertical cuts and three straight horizontal cuts drawn across its entire surface, all distinct and in the interior. How many rectangles have all four sides on a cut or a boundary of the sheet?"}
+{"turn":260,"minute":86.2,"seconds":4.65,"action":"fork","idx":2012,"pos":46,"new":" lines","up":0,"tries":3}
+{"turn":260,"minute":86.2,"seconds":8.91,"action":"fork","idx":2011,"pos":59,"new":" D","tries":3}
+{"turn":260,"minute":86.2,"seconds":0.2,"action":"weight","idx":2009,"marks":[{"pos":7,"w":1},{"pos":55,"w":1},{"pos":113,"w":1}]}
+{"turn":260,"minute":86.2,"seconds":0.04,"action":"keep","idx":2009}
+{"turn":260,"minute":86.2,"seconds":0.22,"action":"weight","idx":2010,"marks":[{"pos":47,"w":1},{"pos":77,"w":1}]}
+{"turn":260,"minute":86.2,"seconds":0.07,"action":"keep","idx":2010}
+{"turn":260,"minute":86.2,"seconds":0.15,"action":"fork","idx":2008,"pos":171,"new":"Since","tries":3}
+{"turn":260,"minute":86.2,"seconds":0.18,"action":"keep","idx":1047}
+{"turn":260,"minute":86.2,"seconds":0.0,"action":"pose","subject":"prealgebra","problem":"The sum of three positive numbers is 18 and the sum of their pairwise products is 95. What is the sum of their squares?"}
+{"turn":269,"minute":86.6,"seconds":12.61,"action":"fork","idx":2011,"pos":64,"new":" A","tries":3}
+{"turn":269,"minute":86.6,"seconds":7.14,"action":"fork","idx":2012,"pos":61,"new":"4","tries":3}
+{"turn":269,"minute":86.6,"seconds":10.03,"action":"fork","idx":2008,"pos":171,"new":"From","up":0,"tries":3}
+{"turn":269,"minute":86.6,"seconds":2.25,"action":"pose","subject":"prealgebra","problem":"The sum of three positive numbers is 18 and the sum of their pairwise products is 95. What is the sum of their squares?"}
+{"turn":273,"minute":86.7,"seconds":3.98,"action":"fork","idx":2012,"pos":59,"new":" plus","tries":3}
+{"turn":273,"minute":86.7,"seconds":0.1,"action":"look","idx":2011,"from":113,"to":122}
+{"turn":273,"minute":86.7,"seconds":0.1,"action":"weight","idx":2013,"marks":[{"pos":68,"w":1}]}
+{"turn":273,"minute":86.7,"seconds":0.14,"action":"keep","idx":2013}
+{"turn":273,"minute":86.7,"seconds":0.24,"action":"weight","idx":2008,"marks":[{"pos":293,"w":1},{"pos":453,"w":1}]}
+{"turn":273,"minute":86.7,"seconds":0.1,"action":"keep","idx":2008}
+{"turn":279,"minute":99.8,"seconds":0.07,"action":"keep","idx":2012}
+{"turn":279,"minute":99.8,"seconds":7.73,"action":"fork","idx":2011,"pos":114,"new":"Since","up":0,"tries":3}
+{"turn":279,"minute":99.8,"seconds":775.7,"action":"train","only":[911,596,374,1047,2008,2009,2010,2012,2013],"steps":8,"hold":"rest","lr":2e-07,"validate":6}
+{"turn":282,"minute":100.5,"seconds":3.69,"action":"pose","subject":"number_theory","problem":"What is the greatest common divisor of 2520 and 3192?"}
+{"turn":282,"minute":100.5,"seconds":3.4,"action":"pose","subject":"number_theory","problem":"Find the sum of all positive multiples of 17 less than 600."}
+{"turn":282,"minute":100.5,"seconds":3.16,"action":"pose","subject":"prealgebra","problem":"Convert the base-seven number $3526_7$ to base ten."}
+{"turn":282,"minute":100.5,"seconds":3.32,"action":"pose","subject":"algebra","problem":"If $x=-3$, $y=5$, and $z=-2$, compute $(x-yz)^3-(x-y)^2$."}
+{"turn":282,"minute":100.5,"seconds":3.17,"action":"pose","subject":"intermediate_algebra","problem":"What is the remainder when $x^{100}+x^{51}+7$ is divided by $x^2+1$?"}
+{"turn":282,"minute":100.5,"seconds":5.12,"action":"pose","subject":"counting_and_probability","problem":"A drawer contains seven red, four blue, and five green marbles. Three marbles are drawn without replacement. Find the probability, as a reduced fraction, that exactly two drawn marbles are blue."}
+{"turn":282,"minute":100.5,"seconds":4.05,"action":"pose","subject":"geometry","problem":"What is the area of the triangle with vertices $(-2,5)$, $(4,-3)$, and $(1,7)$?"}
+{"turn":289,"minute":100.9,"seconds":0.19,"action":"weight","idx":2014,"marks":[{"pos":50,"w":1},{"pos":142,"w":1}]}
+{"turn":289,"minute":100.9,"seconds":0.18,"action":"keep","idx":2014}
+{"turn":289,"minute":100.9,"seconds":2.84,"action":"fork","idx":2015,"pos":94,"new":"5","tries":3}
+{"turn":289,"minute":100.9,"seconds":0.2,"action":"weight","idx":2016,"marks":[{"pos":21,"w":1},{"pos":91,"w":1}]}
+{"turn":289,"minute":100.9,"seconds":0.16,"action":"keep","idx":2016}
+{"turn":289,"minute":100.9,"seconds":4.25,"action":"fork","idx":2017,"pos":17,"new":"yz","tries":3}
+{"turn":289,"minute":100.9,"seconds":2.76,"action":"fork","idx":2018,"pos":57,"new":").\n\n","tries":3}
+{"turn":289,"minute":100.9,"seconds":0.16,"action":"weight","idx":2019,"marks":[{"pos":25,"w":1},{"pos":243,"w":1}]}
+{"turn":289,"minute":100.9,"seconds":0.08,"action":"keep","idx":2019}
+{"turn":289,"minute":100.9,"seconds":0.22,"action":"weight","idx":2020,"marks":[{"pos":74,"w":1},{"pos":101,"w":1}]}
+{"turn":289,"minute":100.9,"seconds":0.14,"action":"keep","idx":2020}
+{"turn":289,"minute":100.9,"seconds":8.04,"action":"pose","subject":"number_theory","problem":"The positive integer $N$ has prime factorization $2^7 3^4 5^2$. How many of its positive divisors are divisible by 30 but not by 36?"}
+{"turn":289,"minute":100.9,"seconds":5.51,"action":"pose","subject":"intermediate_algebra","problem":"For real $x$, what is the minimum of $x^4-6x^2+13$? Give all $x$ attaining the minimum as part of your reasoning."}
+{"turn":302,"minute":101.1,"seconds":2.99,"action":"fork","idx":2015,"pos":95,"new":"9","tries":3}
+{"turn":302,"minute":101.1,"seconds":8.5,"action":"fork","idx":2021,"pos":209,"new":"Count","tries":3}
+{"turn":302,"minute":101.1,"seconds":0.18,"action":"weight","idx":2017,"marks":[{"pos":15,"w":1}]}
+{"turn":302,"minute":101.1,"seconds":0.04,"action":"keep","idx":2017}
+{"turn":302,"minute":101.1,"seconds":0.07,"action":"keep","idx":2018}
+{"turn":302,"minute":101.1,"seconds":2.48,"action":"fork","idx":2022,"pos":252,"new":" global","tries":3}
+{"turn":302,"minute":101.1,"seconds":0.15,"action":"open","idx":761}
+{"turn":302,"minute":101.1,"seconds":0.16,"action":"open","idx":829}
+{"turn":310,"minute":101.2,"seconds":0.19,"action":"weight","idx":2015,"marks":[{"pos":161,"w":1}]}
+{"turn":310,"minute":101.2,"seconds":0.05,"action":"keep","idx":2015}
+{"turn":310,"minute":101.2,"seconds":0.1,"action":"keep","idx":2022}
+{"turn":310,"minute":101.2,"seconds":0.09,"action":"look","idx":2021,"from":315,"to":324}
+{"turn":310,"minute":101.2,"seconds":6.36,"action":"fork","idx":761,"pos":451,"new":" here","tries":3}
+{"turn":310,"minute":101.2,"seconds":4.4,"action":"fork","idx":829,"pos":166,"new":"5","tries":3}
+{"turn":316,"minute":101.4,"seconds":7.63,"action":"fork","idx":2021,"pos":320,"new":" Both","up":0,"tries":3}
+{"turn":316,"minute":101.4,"seconds":2.54,"action":"fork","idx":829,"pos":174,"new":"1","tries":3}
+{"turn":316,"minute":101.4,"seconds":4.0,"action":"fork","idx":761,"pos":463,"new":"_n","tries":3}
+{"turn":319,"minute":111.7,"seconds":0.19,"action":"weight","idx":761,"marks":[{"pos":462,"w":1}]}
+{"turn":319,"minute":111.7,"seconds":0.16,"action":"keep","idx":761}
+{"turn":319,"minute":111.7,"seconds":0.24,"action":"keep","idx":829}
+{"turn":319,"minute":111.7,"seconds":0.29,"action":"keep","idx":2021}
+{"turn":319,"minute":111.7,"seconds":610.29,"action":"train","only":[761,829,2014,2015,2016,2017,2018,2019,2020,2021,2022],"steps":7,"lr":1.7e-07,"hold":"rest","validate":4}
+{"turn":324,"minute":112.5,"seconds":3.2,"action":"pose","subject":"number_theory","problem":"Among the integers from 50 to 100 inclusive, how many are prime and have tens digit smaller than their units digit?"}
+{"turn":324,"minute":112.5,"seconds":4.5,"action":"pose","subject":"number_theory","problem":"What is the sum of the decimal digits of $2^{12}\\cdot5^9-1$?"}
+{"turn":324,"minute":112.5,"seconds":6.29,"action":"pose","subject":"intermediate_algebra","problem":"In the expansion of $(1+x+x^2)^6$, what is the coefficient of $x^4$?"}
+{"turn":324,"minute":112.5,"seconds":6.55,"action":"pose","subject":"counting_and_probability","problem":"Sofia rolls two distinguishable fair six-sided dice. How many outcomes $(a,b)$ satisfy $a^2+b^2\\equiv 0\\pmod 5$?"}
+{"turn":324,"minute":112.5,"seconds":5.76,"action":"pose","subject":"number_theory","problem":"How many integer triples $(x,y,z)$ satisfy $x^2+y^2+z^2=14$? Count different orders and signs separately."}
+{"turn":324,"minute":112.5,"seconds":4.04,"action":"pose","subject":"algebra","problem":"Evaluate $\\prod_{j=2}^{20} (1-1/j^2)$ as a reduced fraction."}
+{"turn":324,"minute":112.5,"seconds":6.24,"action":"pose","subject":"geometry","problem":"A circle has equation $x^2+y^2-8x+6y=0$. What is the length of its chord on the line $x=1$?"}
+{"turn":331,"minute":112.8,"seconds":4.83,"action":"fork","idx":2023,"pos":48,"new":" Identify","tries":3}
+{"turn":331,"minute":112.8,"seconds":5.67,"action":"fork","idx":2024,"pos":17,"new":" notice","tries":3}
+{"turn":331,"minute":112.8,"seconds":0.59,"action":"weight","idx":2025,"marks":[{"pos":38,"w":1},{"pos":133,"w":1},{"pos":251,"w":1}]}
+{"turn":331,"minute":112.8,"seconds":0.13,"action":"keep","idx":2025}
+{"turn":331,"minute":112.8,"seconds":3.54,"action":"fork","idx":2026,"pos":419,"new":",","tries":3}
+{"turn":331,"minute":112.8,"seconds":8.26,"action":"fork","idx":2027,"pos":96,"new":" then","tries":3}
+{"turn":331,"minute":112.8,"seconds":2.06,"action":"fork","idx":2028,"pos":206,"new":"Most","tries":3}
+{"turn":331,"minute":112.8,"seconds":0.55,"action":"weight","idx":2029,"marks":[{"pos":30,"w":1},{"pos":361,"w":1}]}
+{"turn":331,"minute":112.8,"seconds":0.16,"action":"keep","idx":2029}
+{"turn":331,"minute":112.8,"seconds":7.34,"action":"pose","subject":"counting_and_probability","problem":"Of the $5!$ permutations of $1,2,3,4,5$, how many have none of $1,2,3$ in its original position? The positions of 4 and 5 are unrestricted."}
+{"turn":341,"minute":113.1,"seconds":0.14,"action":"weight","idx":2023,"marks":[{"pos":50,"w":1},{"pos":63,"w":1},{"pos":110,"w":1}]}
+{"turn":341,"minute":113.1,"seconds":0.06,"action":"keep","idx":2023}
+{"turn":341,"minute":113.1,"seconds":0.21,"action":"weight","idx":2024,"marks":[{"pos":44,"w":1},{"pos":54,"w":1},{"pos":58,"w":1}]}
+{"turn":341,"minute":113.1,"seconds":0.05,"action":"keep","idx":2024}
+{"turn":341,"minute":113.1,"seconds":4.53,"action":"fork","idx":2027,"pos":107,"new":" one","tries":3}
+{"turn":341,"minute":113.1,"seconds":1.05,"action":"fork","idx":2028,"pos":230,"new":"1","tries":3}
+{"turn":341,"minute":113.1,"seconds":0.1,"action":"look","idx":2026,"from":421,"to":425}
+{"turn":341,"minute":113.1,"seconds":7.34,"action":"fork","idx":2030,"pos":50,"new":"Sub","tries":3}
+{"turn":349,"minute":113.6,"seconds":2.63,"action":"fork","idx":2026,"pos":423,"new":" or","up":0,"tries":3}
+{"turn":349,"minute":113.6,"seconds":3.07,"action":"fork","idx":2027,"pos":136,"new":" So","tries":3}
+{"turn":349,"minute":113.6,"seconds":0.18,"action":"keep","idx":2028}
+{"turn":349,"minute":113.6,"seconds":0.18,"action":"keep","idx":2030}
+{"turn":349,"minute":113.6,"seconds":4.6,"action":"pose","subject":"geometry","problem":"A rhombus has perimeter 52 and one diagonal of length 10. What is its area?"}
+{"turn":349,"minute":113.6,"seconds":4.55,"action":"pose","subject":"precalculus","problem":"Find the least positive angle $t$, in degrees, satisfying $\\cos(3t)=\\sin(2t)$."}
+{"turn":355,"minute":113.7,"seconds":0.03,"action":"look","idx":2027,"from":193,"to":195}
+{"turn":355,"minute":113.7,"seconds":0.17,"action":"weight","idx":2026,"marks":[{"pos":210,"w":1},{"pos":335,"w":1}]}
+{"turn":355,"minute":113.7,"seconds":0.11,"action":"keep","idx":2026}
+{"turn":355,"minute":113.7,"seconds":4.39,"action":"fork","idx":2031,"pos":80,"new":" side","tries":3}
+{"turn":355,"minute":113.7,"seconds":1.26,"action":"fork","idx":2032,"pos":92,"new":" Considering","tries":3}
+{"turn":360,"minute":113.8,"seconds":2.08,"action":"fork","idx":2027,"pos":194,"new":" maximum","up":0,"tries":3}
+{"turn":360,"minute":113.8,"seconds":0.09,"action":"keep","idx":2031}
+{"turn":360,"minute":113.8,"seconds":2.01,"action":"fork","idx":2032,"pos":100,"new":" two","up":0,"tries":3}
+{"turn":363,"minute":113.9,"seconds":0.03,"action":"look","idx":2027,"from":196,"to":199}
+{"turn":363,"minute":113.9,"seconds":0.06,"action":"weight","idx":2032,"marks":[{"pos":8,"w":1},{"pos":82,"w":1}]}
+{"turn":363,"minute":113.9,"seconds":0.05,"action":"keep","idx":2032}
+{"turn":366,"minute":113.9,"seconds":2.06,"action":"fork","idx":2027,"pos":198,"new":" three","up":0,"tries":3}
+{"turn":367,"minute":114.0,"seconds":0.03,"action":"look","idx":2027,"from":204,"to":205}
+{"turn":368,"minute":114.1,"seconds":1.73,"action":"fork","idx":2027,"pos":204,"new":",","tries":3}
+{"turn":369,"minute":114.1,"seconds":0.03,"action":"look","idx":2027,"from":205,"to":208}
+{"turn":370,"minute":114.2,"seconds":4.08,"action":"fork","idx":2027,"pos":207,"new":" less","up":0,"tries":3}
+{"turn":371,"minute":114.3,"seconds":0.06,"action":"look","idx":2027,"from":236,"to":237}
+{"turn":372,"minute":126.1,"seconds":0.08,"action":"fork","idx":2027,"pos":237,"new":"<|endoftext|>","up":0,"write":0}
+{"turn":372,"minute":126.1,"seconds":0.05,"action":"keep","idx":2027}
+{"turn":372,"minute":126.1,"seconds":709.76,"action":"train","only":[2023,2024,2025,2026,2027,2028,2029,2030,2031,2032],"steps":7,"lr":1.7e-07,"hold":"rest","validate":5}
+{"turn":375,"minute":142.6,"seconds":984.8,"action":"train","start":"base","data":"all","exclude":[3,44,83,139,200,230],"optimizer":"adam","lr":2e-07,"steps":10,"hold":"rest","validate":4}
+{"turn":376,"minute":143.7,"seconds":7.79,"action":"pose","subject":"number_theory","problem":"Find the last two decimal digits of $7^{2026}$."}
+{"turn":376,"minute":143.7,"seconds":3.9,"action":"pose","subject":"algebra","problem":"What is $99998\\times100002-99997\\times100003$?"}
+{"turn":376,"minute":143.7,"seconds":6.49,"action":"pose","subject":"intermediate_algebra","problem":"Let $a+b=6$ and $ab=2$. Without solving for $a$ or $b$, compute $a^5+b^5$."}
+{"turn":376,"minute":143.7,"seconds":3.37,"action":"pose","subject":"number_theory","problem":"What is the remainder when $1!+2!+3!+\\cdots+2025!$ is divided by 24?"}
+{"turn":376,"minute":143.7,"seconds":6.13,"action":"pose","subject":"algebra","problem":"Evaluate $\\frac{(\\sqrt{7}+\\sqrt{6})^{18}+(\\sqrt{7}-\\sqrt{6})^{18}}{(\\sqrt{7}+\\sqrt{6})^{9}+(\\sqrt{7}-\\sqrt{6})^{9}}-\\left((\\sqrt{7}+\\sqrt{6})^{9}+(\\sqrt{7}-\\sqrt{6})^{9}\\right)$. Leave your answer in terms of the sum $(\\sqrt{7}+\\sqrt{6})^{9}+(\\sqrt{7}-\\sqrt{6})^{9}$ if convenient."}
+{"turn":376,"minute":143.7,"seconds":9.59,"action":"pose","subject":"precalculus","problem":"Let $\\theta$ be an acute angle with $\\cos\\theta=3/5$. Compute $\\cos(4\\theta)$ exactly."}
+{"turn":376,"minute":143.7,"seconds":6.35,"action":"pose","subject":"counting_and_probability","problem":"How many subsets of $\\{1,2,\\ldots,30\\}$ contain an odd number of even integers? Include or exclude odd integers freely."}
+{"turn":383,"minute":144.6,"seconds":0.4,"action":"weight","idx":2033,"marks":[{"pos":51,"w":1},{"pos":306,"w":1},{"pos":482,"w":1}]}
+{"turn":383,"minute":144.6,"seconds":0.21,"action":"keep","idx":2033}
+{"turn":383,"minute":144.6,"seconds":8.21,"action":"fork","idx":2034,"pos":33,"new":" rewrite","tries":3}
+{"turn":383,"minute":144.6,"seconds":0.52,"action":"weight","idx":2035,"marks":[{"pos":26,"w":1},{"pos":75,"w":1},{"pos":230,"w":1},{"pos":375,"w":1}]}
+{"turn":383,"minute":144.6,"seconds":0.14,"action":"keep","idx":2035}
+{"turn":383,"minute":144.6,"seconds":0.2,"action":"weight","idx":2036,"marks":[{"pos":34,"w":1},{"pos":64,"w":1},{"pos":123,"w":1}]}
+{"turn":383,"minute":144.6,"seconds":0.05,"action":"keep","idx":2036}
+{"turn":383,"minute":144.6,"seconds":32.3,"action":"fork","idx":2037,"pos":60,"new":" +","tries":3}
+{"turn":383,"minute":144.6,"seconds":12.16,"action":"fork","idx":2038,"pos":11,"new":" can","tries":3}
+{"turn":383,"minute":144.6,"seconds":42.81,"action":"fork","idx":2039,"pos":75,"new":" For","tries":3}
+{"turn":383,"minute":144.6,"seconds":4.21,"action":"pose","subject":"algebra","problem":"The roots of $x^2-9x+1=0$ are $r,s$. Evaluate $r/s+s/r$ exactly without approximating the roots."}
+{"turn":394,"minute":144.7,"seconds":0.17,"action":"weight","idx":2034,"marks":[{"pos":8,"w":1},{"pos":244,"w":1}]}
+{"turn":394,"minute":144.7,"seconds":0.17,"action":"keep","idx":2034}
+{"turn":394,"minute":144.7,"seconds":0.26,"action":"weight","idx":2038,"marks":[{"pos":17,"w":1},{"pos":47,"w":1},{"pos":181,"w":1}]}
+{"turn":394,"minute":144.7,"seconds":0.13,"action":"keep","idx":2038}
+{"turn":394,"minute":144.7,"seconds":0.18,"action":"weight","idx":2039,"marks":[{"pos":143,"w":1},{"pos":149,"w":1},{"pos":277,"w":1}]}
+{"turn":394,"minute":144.7,"seconds":0.07,"action":"keep","idx":2039}
+{"turn":394,"minute":144.7,"seconds":0.27,"action":"weight","idx":2040,"marks":[{"pos":19,"w":1},{"pos":24,"w":1},{"pos":152,"w":1}]}
+{"turn":394,"minute":144.7,"seconds":0.12,"action":"keep","idx":2040}
+{"turn":394,"minute":144.7,"seconds":0.1,"action":"look","idx":2037,"from":73,"to":73}
+{"turn":403,"minute":144.8,"seconds":8.6,"action":"fork","idx":2037,"pos":73,"new":"ab","tries":3}
+{"turn":404,"minute":144.9,"seconds":0.06,"action":"look","idx":2037,"from":140,"to":147}
+{"turn":405,"minute":145.1,"seconds":7.0,"action":"fork","idx":2037,"pos":143,"new":" identity","up":0,"tries":3}
+{"turn":406,"minute":145.2,"seconds":3.03,"action":"fork","idx":2037,"pos":284,"new":" -","tries":3}
+{"turn":407,"minute":145.2,"seconds":2.32,"action":"fork","idx":2037,"pos":331,"new":" -","tries":3}
+{"turn":408,"minute":145.3,"seconds":1.89,"action":"fork","idx":2037,"pos":364,"new":"Since","up":0,"tries":3}
+{"turn":409,"minute":157.1,"seconds":0.1,"action":"keep","idx":2037}
+{"turn":409,"minute":157.1,"seconds":703.0,"action":"train","only":[2033,2034,2035,2036,2037,2038,2039,2040],"lr":2e-07,"steps":8,"hold":"rest","validate":5}
+{"turn":411,"minute":159.9,"seconds":163.96,"action":"use","version":"v7"}
+{"turn":412,"minute":163.9,"seconds":236.17,"action":"validate","k":9}
+{"turn":413,"minute":164.8,"seconds":5.29,"action":"pose","subject":"geometry","problem":"Triangle $ABC$ has $AB=12$ and $AC=18$. The bisector of $\\angle BAC$ meets $BC$ at $D$. If the area of $ABC$ is $75$, find the area of $ABD$."}
+{"turn":413,"minute":164.8,"seconds":5.49,"action":"pose","subject":"geometry","problem":"From point $P$ outside a circle a tangent $PT$ and a secant $PAB$ are drawn, with $A$ between $P$ and $B$. If $PT=12$ and $AB=10$, find $PA$."}
+{"turn":413,"minute":164.8,"seconds":5.36,"action":"pose","subject":"intermediate_algebra","problem":"Solve $\\sqrt{2x+3}=x$ over the reals."}
+{"turn":413,"minute":164.8,"seconds":6.07,"action":"pose","subject":"counting_and_probability","problem":"A three-element subset of $\\{1,2,\\ldots,10\\}$ is chosen uniformly. Find the probability that at least two of its elements differ by 1."}
+{"turn":413,"minute":164.8,"seconds":4.88,"action":"pose","subject":"algebra","problem":"For all real $x$ where the expression is defined, what is the least possible value of $\\frac{9}{x^2+1}+x^2+1$?"}
+{"turn":413,"minute":164.8,"seconds":6.77,"action":"pose","subject":"number_theory","problem":"How many integers $m$ between 1 and 420 inclusive satisfy $\\gcd(m,420)=1$?"}
+{"turn":413,"minute":164.8,"seconds":4.02,"action":"pose","subject":"geometry","problem":"A square of side 6 is inscribed in a circle. Another square is circumscribed about the same circle. Find the area between the two squares."}
+{"turn":413,"minute":164.8,"seconds":3.43,"action":"pose","subject":"precalculus","problem":"What is the smallest positive solution in radians to $2\\sin^2 x=\\sin x$?"}
+{"turn":421,"minute":165.0,"seconds":4.93,"action":"fork","idx":2044,"pos":195,"new":" between","tries":3}
+{"turn":421,"minute":165.0,"seconds":0.34,"action":"weight","idx":2041,"marks":[{"pos":14,"w":1},{"pos":53,"w":1},{"pos":117,"w":1}]}
+{"turn":421,"minute":165.0,"seconds":0.26,"action":"keep","idx":2041}
+{"turn":421,"minute":165.0,"seconds":0.35,"action":"weight","idx":2042,"marks":[{"pos":9,"w":1},{"pos":112,"w":1},{"pos":219,"w":1}]}
+{"turn":421,"minute":165.0,"seconds":0.21,"action":"keep","idx":2042}
+{"turn":421,"minute":165.0,"seconds":0.5,"action":"weight","idx":2043,"marks":[{"pos":24,"w":1},{"pos":114,"w":1},{"pos":217,"w":1},{"pos":249,"w":1}]}
+{"turn":421,"minute":165.0,"seconds":0.16,"action":"keep","idx":2043}
+{"turn":421,"minute":165.0,"seconds":0.47,"action":"weight","idx":2045,"marks":[{"pos":58,"w":1},{"pos":91,"w":1},{"pos":277,"w":1},{"pos":320,"w":1}]}
+{"turn":421,"minute":165.0,"seconds":0.19,"action":"keep","idx":2045}
+{"turn":421,"minute":165.0,"seconds":0.31,"action":"weight","idx":2046,"marks":[{"pos":101,"w":1},{"pos":241,"w":1}]}
+{"turn":421,"minute":165.0,"seconds":0.22,"action":"keep","idx":2046}
+{"turn":421,"minute":165.0,"seconds":0.32,"action":"weight","idx":2047,"marks":[{"pos":35,"w":1},{"pos":50,"w":1}]}
+{"turn":421,"minute":165.0,"seconds":0.28,"action":"keep","idx":2047}
+{"turn":421,"minute":165.0,"seconds":0.41,"action":"weight","idx":2048,"marks":[{"pos":21,"w":1},{"pos":53,"w":1},{"pos":125,"w":1}]}
+{"turn":421,"minute":165.0,"seconds":0.15,"action":"keep","idx":2048}
+{"turn":436,"minute":165.0,"seconds":0.05,"action":"look","idx":2044,"from":197,"to":198}
+{"turn":437,"minute":165.1,"seconds":4.84,"action":"fork","idx":2044,"pos":197,"new":".","up":0,"tries":3}
+{"turn":438,"minute":165.2,"seconds":2.46,"action":"fork","idx":2044,"pos":259,"new":"Therefore","tries":3,"up":0}
+{"turn":439,"minute":178.3,"seconds":0.16,"action":"weight","idx":2044,"marks":[{"pos":138,"w":1},{"pos":169,"w":1},{"pos":222,"w":1}]}
+{"turn":439,"minute":178.3,"seconds":0.08,"action":"keep","idx":2044}
+{"turn":439,"minute":178.3,"seconds":781.85,"action":"train","only":[2041,2042,2043,2044,2045,2046,2047,2048],"lr":1.5e-07,"steps":7,"hold":"rest","validate":6}
+{"turn":442,"minute":180.5,"seconds":127.86,"action":"validate","k":8}
+{"turn":443,"minute":180.5,"seconds":0.0,"action":"finish","version":"v11"}

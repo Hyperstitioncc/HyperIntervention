@@ -1,0 +1,21 @@
+{"action": "list"}
+{"action": "open", "idx": 0}
+{"action": "fork", "idx": 0, "pos": 1, "choice": 1, "write": "all"}
+{"action": "keep", "idx": 0}
+{"action": "fork", "idx": 1, "pos": 1, "choice": 1, "write": "all", "tries": 2}
+{"action": "keep", "idx": 1}
+{"action": "fork", "idx": 2, "pos": 1, "choice": 1, "write": "all"}
+{"action": "keep", "idx": 2}
+{"action": "pose", "problem": "A rectangle has a perimeter of 34 and one side of length 5. What is its area?", "subject": "prealgebra"}
+{"action": "train", "runs": [{"lr": 1e-07}, {"lr": 2e-07, "only": [0, 1]}], "validate": true}
+{"action": "status"}
+{"action": "use", "version": "v2"}
+{"action": "fork", "idx": 3, "pos": 1, "choice": 1, "write": "all"}
+{"action": "keep", "idx": 3}
+{"action": "train", "runs": [{"lr": 1e-07}], "background": true}
+{"action": "open", "idx": 4}
+{"action": "eval", "problems": [0, 1], "k": 2}
+{"action": "wait"}
+{"action": "train", "lr": 1e-07, "steps": 3}
+{"action": "use", "version": "v2"}
+{"action": "status"}

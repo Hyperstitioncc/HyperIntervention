@@ -13,13 +13,17 @@ def train_rows(n=1500, seed=0, levels="3,4,5"):
 
 
 def rows_for(which):
+    dev = os.environ.get("MATH_DEV_ROWS")
+    if which == "test" and dev:
+        return [json.loads(l) for l in open(dev)]
     return load("test") if which == "test" else train_rows()
 
 
 def arm(a):
     from math_eval import make_llm, generate
     from concurrent.futures import ProcessPoolExecutor
-    rows = [r for r in rows_for(a.set) if r["answer"]]
+    rows = [json.loads(l) for l in open(a.rows)] if a.rows else rows_for(a.set)
+    rows = [r for r in rows if r["answer"]]
     texts = [t[0] for t in generate(make_llm(a.model, gpu_mem=a.gpu_mem), rows)]
     with ProcessPoolExecutor(16) as ex:
         ok = list(ex.map(grade, [r["answer"] for r in rows], texts, chunksize=32))
@@ -84,28 +88,25 @@ def flips(base, arm_, ids):
     return {"n": len(ids), "base": sum(base[i] for i in ids), "acc": sum(arm_[i] for i in ids), "up": up, "down": down}
 
 
-def note(url, text):
-    from llm_editor import Server
-    print(text, file=sys.stderr, flush=True)
-    try:
-        Server(url)("note", text=text)
-    except Exception as e:
-        print(f"(note failed: {e})", file=sys.stderr)
+def by_subject(base, arm_):
+    groups = {}
+    for i in base:
+        groups.setdefault(i.split("/")[1], []).append(i)
+    return {s: flips(base, arm_, ids) for s, ids in sorted(groups.items())}
 
 
-def trained_ids(run, round_):
-    p = os.path.join(run, "episodes.jsonl")
-    if not os.path.exists(p):
-        return set()
-    return {e["episode"]["prompt"]["id"] for e in map(json.loads, open(p)) if e["round"] < round_}
+def base_boxed(out):
+    return {r["id"] for r in map(json.loads, open(os.path.join(out, "base-test.jsonl"))) if "\\boxed" in r["completion"]}
 
 
 def setup(a):
     os.makedirs(a.out, exist_ok=True)
-    base = {s: os.path.join(a.out, f"base-{s}.jsonl") for s in ("test", "train")}
+    sets = ("test",) if os.environ.get("EVAL_FAST", "0") != "0" else ("test", "train")
+    base = {s: os.path.join(a.out, f"base-{s}.jsonl") for s in sets}
     for s in base:
         run_arm(a.base, s, base[s], a.gpu_mem)
     B = {s: results(base[s]) for s in base}
+    B.setdefault("train", {})
     print(f"base: test {sum(B['test'].values())}/{len(B['test'])}, train {sum(B['train'].values())}/{len(B['train'])}",
           file=sys.stderr, flush=True)
     return B, {json.loads(l)["id"] for l in open(a.near)}
@@ -114,52 +115,47 @@ def setup(a):
 def evaluate(a, B, near, ck, tag, trained, seed):
     t0 = time.time()
     work = os.path.join(a.out, f"work-{tag}")
+    fast = os.environ.get("EVAL_FAST", "0") != "0"
     model = model_dir(ck, os.path.join(work, "trained"))
-    size = control_dir(a.base, model, os.path.join(work, "control"), seed=seed)
+    size = None if fast else control_dir(a.base, model, os.path.join(work, "control"), seed=seed)
     rep = {"tag": tag, "ckpt": ck, "relative_change": size, "arms": {}}
-    for name in ("trained", "control"):
+    boxed = base_boxed(a.out)
+    for name in ("trained",) if fast else ("trained", "control"):
         R = {}
-        for s in ("test", "train"):
+        for s in ("test",) if fast else ("test", "train"):
             run_arm(os.path.join(work, name), s, os.path.join(a.out, f"{tag}-{name}-{s}.jsonl"), a.gpu_mem)
             R[s] = results(os.path.join(a.out, f"{tag}-{name}-{s}.jsonl"))
         ids = list(B["train"])
         rep["arms"][name] = {
             "test": flips(B["test"], R["test"], list(B["test"])),
+            "test_by_subject": by_subject(B["test"], R["test"]),
+            "test_base_boxed": flips(B["test"], R["test"], [i for i in B["test"] if i in boxed]),
+            "test_base_unboxed": flips(B["test"], R["test"], [i for i in B["test"] if i not in boxed]),
+        }
+        if fast:
+            continue
+        rep["arms"][name].update({
             "train_trained": flips(B["train"], R["train"], [i for i in ids if i in trained]),
             "train_near_untrained": flips(B["train"], R["train"], [i for i in ids if i in near and i not in trained]),
             "train_other": flips(B["train"], R["train"], [i for i in ids if i not in near and i not in trained]),
-        }
+        })
     rep["secs"] = round(time.time() - t0)
     json.dump(rep, open(os.path.join(a.out, f"{tag}.json"), "w"), indent=1)
     with open(os.path.join(a.out, "summary.jsonl"), "a") as f:
         f.write(json.dumps(rep) + "\n")
     shutil.rmtree(work)
+    if fast:
+        return rep
 
     def fmt(x):
         return f"{x['acc'] - x['base']:+d} (+{x['up']}/−{x['down']})"
     t, c = rep["arms"]["trained"], rep["arms"]["control"]
-    note(a.url, f"eval {tag} (Δweights {size:.1e} rel, {rep['secs'] // 60} min): "
+    print(f"eval {tag} (Δweights {size:.1e} rel, {rep['secs'] // 60} min): "
          f"MATH test {t['test']['acc']}/{t['test']['n']} vs base {t['test']['base']}: trained {fmt(t['test'])}, "
          f"random control {fmt(c['test'])} · near-miss untrained: trained {fmt(t['train_near_untrained'])}, "
          f"control {fmt(c['train_near_untrained'])} · trained-on problems ({t['train_trained']['n']}): "
-         f"{fmt(t['train_trained'])} · other train: trained {fmt(t['train_other'])}, control {fmt(c['train_other'])}")
+         f"{fmt(t['train_trained'])} · other train: trained {fmt(t['train_other'])}, control {fmt(c['train_other'])}", file=sys.stderr, flush=True)
     return rep
-
-
-def watch(a):
-    B, near = setup(a)
-    while True:
-        cks = sorted(glob.glob(os.path.join(a.run, "ckpt-*")))
-        todo = [c for c in cks if not os.path.exists(os.path.join(a.out, f"round-{int(c[-5:])}.json"))]
-        if not todo:
-            time.sleep(30)
-            continue
-        ck = todo[-1]
-        n = int(ck[-5:])
-        try:
-            evaluate(a, B, near, ck, f"round-{n}", trained_ids(a.run, n), seed=n)
-        except FileNotFoundError:
-            time.sleep(30)
 
 
 def one(a):
@@ -171,22 +167,18 @@ def one(a):
 def main():
     ap = argparse.ArgumentParser()
     sp = ap.add_subparsers(dest="cmd")
-    w = sp.add_parser("watch")
-    w.add_argument("--run", required=True); w.add_argument("--base", required=True)
-    w.add_argument("--near", required=True, help="the editor's problem list")
-    w.add_argument("--out", required=True); w.add_argument("--gpu-mem", type=float, default=0.3)
-    w.add_argument("--url", default="http://127.0.0.1:8765")
     o = sp.add_parser("one")
     o.add_argument("--ckpt", required=True); o.add_argument("--tag", required=True)
     o.add_argument("--episodes", required=True, help="the episodes it was trained on")
     o.add_argument("--base", required=True); o.add_argument("--near", required=True)
     o.add_argument("--out", required=True); o.add_argument("--gpu-mem", type=float, default=0.3)
-    o.add_argument("--seed", type=int, default=0); o.add_argument("--url", default="http://127.0.0.1:8765")
+    o.add_argument("--seed", type=int, default=0)
     r = sp.add_parser("arm")
-    r.add_argument("--model", required=True); r.add_argument("--set", choices=["test", "train"], required=True)
+    r.add_argument("--model", required=True); r.add_argument("--set", choices=["test", "train"], default="test")
+    r.add_argument("--rows", help="grade this problem file (id, prompt, answer per line) instead of --set")
     r.add_argument("--out", required=True); r.add_argument("--gpu-mem", type=float, default=0.3)
     a = ap.parse_args()
-    {"arm": arm, "one": one, "watch": watch}[a.cmd](a)
+    {"arm": arm, "one": one}[a.cmd](a)
 
 
 if __name__ == "__main__":

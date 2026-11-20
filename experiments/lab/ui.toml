@@ -1,0 +1,12 @@
+model = "/path/to/the/student"
+run_dir = "/path/to/the/run"
+prompts = "/path/to/the/pool/tasks"
+template = "<|im_start|>user\n{prompt}<|im_end|>\n<|im_start|>assistant\n"
+read = "plain"
+
+[episode]
+eos = [151643, 151645]
+
+[episode.sampling]
+temperature = 0.0
+max_new_tokens = 16384
