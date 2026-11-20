@@ -1,0 +1,21 @@
+# Live rounds of 8 problems at lr 1e-5 x 3 epochs hurt MATH test by 1.4 points (11-07), so: every
+# correction in one minibatch, many epochs, small steps.
+model = "/home/mason/models/qwen2.5-7b"
+run_dir = "unused"
+prompts = "/home/mason/mathx/pick-near-ui.jsonl"
+template = "<|im_start|>system\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>user\n{prompt}<|im_end|>\n<|im_start|>assistant\n"
+dtype = "f32"                 # no bf16 cast of the f32 masters (bf16 rounding erased most of the update)
+[adapt]
+mode = "full"
+
+[update]
+pair_weight = 0.0
+sft_weight = 0.0
+forced_weight = 1.0
+pair_horizon = 4096
+epochs = 5
+minibatch = 100000
+optimizer_on_cpu = false
+lr = 1e-2
+optimizer = "sgdm"           # SGD with momentum (A/B vs AdamW); the clipped gradient has norm 1, so a step is lr long
+momentum = 0.9
