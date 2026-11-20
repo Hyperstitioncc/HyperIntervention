@@ -1,11 +1,3 @@
-"""Greedy-grade every problem of a prompt list with manual-rl's own engine (a private `manual-rl ui`).
-
-    ui_filter.py --url http://127.0.0.1:8766 --prompts pick-near.jsonl --out pick-near-ui.jsonl
-
-vLLM and candle round bf16 differently, so near-tie problems can be wrong under vLLM's greedy and
-right under ours. Steering happens on ours: this keeps only the problems our greedy gets wrong (in
-the input order) and records every result in OUT.results.jsonl. Runs in the vLLM venv (math_verify).
-"""
 import argparse, json, sys, time, urllib.request
 sys.path.insert(0, __import__("os").path.dirname(__file__))
 from math_eval import grade

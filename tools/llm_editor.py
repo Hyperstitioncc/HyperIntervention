@@ -1,19 +1,3 @@
-"""An LLM editor that steers manual-rl's model through the `ui` server, one token at a time (vLLM venv).
-
-    OPENROUTER_API_KEY=... llm_editor.py --prompts LIST.jsonl --log DIR [--apply-every 8]
-
-For each problem of the server's list, in order: open it (the server generates the model's greedy
-answer); if that already grades correct, skip it. Otherwise show the editor the problem, the reference
-answer and worked solution, and the model's answer with its branch points (positions whose entropy is
-high) and their top candidates. The editor picks one candidate at one position; the server forks there
-and the model rewrites the rest. Repeat until the answer grades correct (math_verify, as in the eval),
-the editor gives up, or --max-edits. Solved problems are committed to the run's collected.jsonl (no
-training); the rest are dropped. Every --apply-every solved problems the gradient is applied (0 = never).
-
-The editor's instructions are --prompt-file, reread before every call: edit it while this runs.
-Short notes go to the server's editor log (the page shows them); every call is in DIR/calls.jsonl.
-Touch DIR/STOP to finish the current problem and stop.
-"""
 import argparse, json, math, os, re, sys, threading, time, urllib.error, urllib.request
 from concurrent.futures import ProcessPoolExecutor
 sys.path.insert(0, os.path.dirname(__file__))
@@ -50,7 +34,7 @@ class Server:
         print(text, file=sys.stderr, flush=True)
         try:
             self("note", text=text)
-        except Exception as e:  # noqa: BLE001 (a missing note must not stop the run)
+        except Exception as e:
             print(f"(note failed: {e})", file=sys.stderr)
 
 
@@ -164,8 +148,6 @@ class Editor:
         return open(self.a.prompt_file).read()
 
     def ask(self, messages):
-        # DeepSeek ignores reasoning.max_tokens (hard problems ran 60-120k chars and got cut off), and
-        # effort "low" ran just as long, so a reply that is all reasoning retries with reasoning off.
         levels = [{"max_tokens": self.a.reasoning_tokens}, {"enabled": False}]
         level = 0
         for attempt in range(6):
@@ -173,9 +155,6 @@ class Editor:
             try:
                 r = post(OPENROUTER, {"model": self.a.model, "messages": messages, "temperature": self.a.temperature,
                                       "max_tokens": self.a.max_reply, "reasoning": levels[level],
-                                      # one provider, so its prompt cache holds the system prompt and each
-                                      # conversation's history (unpinned, calls hopped between providers,
-                                      # missing the cache, and some ran at 5-15 tok/s)
                                       "provider": {"order": self.a.providers.split(","), "allow_fallbacks": False}},
                          headers={"Authorization": f"Bearer {self.key}", "X-Title": "manual-rl editor"}, timeout=600)
                 if "choices" not in r:
@@ -196,7 +175,7 @@ class Editor:
                         "prompt_tokens": u.get("prompt_tokens"), "completion_tokens": u.get("completion_tokens"),
                         "cached_tokens": (u.get("prompt_tokens_details") or {}).get("cached_tokens")}
                 return content, reasoning, info
-            except Exception as e:  # noqa: BLE001 (retry transient API failures)
+            except Exception as e:
                 print(f"editor call failed ({e}); retrying with reasoning {levels[level]}", file=sys.stderr, flush=True)
                 time.sleep(5 * (attempt + 1))
         raise EditorFailed("editor calls keep failing")
@@ -207,8 +186,6 @@ class EditorFailed(Exception):
 
 
 class Grader:
-    """math_verify times out with signals, which only work in a main thread (in a worker thread it
-    quietly grades everything wrong), so grading runs in a small process pool."""
 
     def __init__(self):
         self.pool = ProcessPoolExecutor(max_workers=4)
@@ -222,7 +199,7 @@ def solve(a, srv, ed, grader, r, idx, solution, log, log_lock, replay=None):
         with log_lock:
             log.write(json.dumps(entry) + "\n"); log.flush()
 
-    def check(d):  # every response's draft must be this problem's: other workers share the server
+    def check(d):
         if d is None or d.get("idx") != idx:
             raise RuntimeError(f"server returned another problem's answer for {idx}")
         return d
@@ -341,13 +318,9 @@ def main():
     if [p["id"] for p in probs] != [r["id"] for r in rows]:
         sys.exit("--prompts does not match the server's problem list")
     log, log_lock = open(os.path.join(a.log, "calls.jsonl"), "a"), threading.Lock()
-    # solved problems from an earlier run still waiting for a gradient count toward --apply-every
     held = sum(1 for p in probs[:a.start] if p.get("picks"))
     tally = {"solved": 0, "already": 0, "failed": 0, "since_apply": held}
     end = len(rows) if not a.limit else min(len(rows), a.start + a.limit)
-    # Workers take problems in order. Once --apply-every are solved, no new problem starts; the last
-    # in-flight problem to finish applies the gradient (it clears every draft on the server), then
-    # work resumes on the new weights.
     by_id = {r["id"]: i for i, r in enumerate(rows)}
     replays = {}
     if a.replay:
@@ -378,12 +351,12 @@ def main():
             try:
                 out = solve(a, srv, ed, grader, rows[idx], idx, solutions[rows[idx]["id"]], log, log_lock,
                             replays.get(idx))
-            except Exception as e:  # noqa: BLE001 (one problem's failure must not stop the others)
+            except Exception as e:
                 out = f"error: {e}"
                 srv.note(f"✗ {rows[idx]['id']} error ({e}); dropping")
                 try:
                     srv("drop", idx=idx)
-                except Exception:  # noqa: BLE001
+                except Exception:
                     pass
             with cond:
                 st["in_flight"] -= 1

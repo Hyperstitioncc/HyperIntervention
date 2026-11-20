@@ -1,7 +1,3 @@
-"""
-usage: resid_decomp.py BASE TRAINED PIVOT.jsonl FEWNEURONS.jsonl
-"""
-
 import json, sys, random, torch
 import torch.nn.functional as Fn
 from collections import Counter, defaultdict

@@ -1,7 +1,3 @@
-"""
-usage: fewneurons.py BASE TRAINED PIVOT.jsonl OUT.jsonl
-"""
-
 import json, sys, torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, AttentionInterface
 from transformers.masking_utils import AttentionMaskInterface, eager_mask
@@ -18,7 +14,7 @@ seqs = [tok(TEMPLATE.replace("{prompt}", probs[it["id"]]["prompt"]), add_special
         for it in items]
 
 
-def attn(module, q, k, v, mask, scaling, dropout=0.0, **kw):  # f32 scores (bf16 eager flips near-ties)
+def attn(module, q, k, v, mask, scaling, dropout=0.0, **kw):
     k, v = repeat_kv(k, module.num_key_value_groups), repeat_kv(v, module.num_key_value_groups)
     w = torch.matmul(q.float(), k.float().transpose(2, 3)) * scaling
     if mask is not None:

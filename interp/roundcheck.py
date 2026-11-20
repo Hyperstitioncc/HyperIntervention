@@ -15,7 +15,7 @@ for n in names:
     b, t = B[n].float(), T[n].float()
     d = t - b
     ch = d != 0
-    ulp = (b.abs() * 2 ** -7).clamp_min(1e-30)  # bf16 spacing at |b| (8 significant bits)
+    ulp = (b.abs() * 2 ** -7).clamp_min(1e-30)
     q = [0.25, 0.5, 0.75]
     absb = b.abs().flatten()
     qs = torch.quantile(absb[torch.randperm(absb.numel())[:1_000_000]], torch.tensor(q))

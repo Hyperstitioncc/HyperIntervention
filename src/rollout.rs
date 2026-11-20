@@ -1,4 +1,3 @@
-
 use crate::model::{KvCache, Model};
 use crate::sampler::{propose, Candidate, Proposal, SamplingConfig};
 use anyhow::{bail, Result};
@@ -10,11 +9,7 @@ use tokenizers::Tokenizer;
 #[derive(Debug, Clone, PartialEq)]
 pub enum Decision {
     Accept,
-    /// Replace the model's token with these (at least one). They are fed one by one; the
-    /// decider is not consulted again until they are used up.
     Force(Vec<u32>),
-    /// Throw away the completion from position `to` on, then feed `force` from there (empty
-    /// means let the model resample). Positions count completion tokens, not prompt tokens.
     Rewind { to: usize, force: Vec<u32> },
     Stop,
 }
@@ -114,7 +109,6 @@ impl<J: Judge + ?Sized> Judge for Box<J> {
     }
 }
 
-/// Equal first tokens are a reinforcement: its DPO term is exactly zero.
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub struct Fork {
     pub pos: usize,
@@ -261,8 +255,6 @@ pub fn run_episode(
     };
     let mut revisions = 0;
     let max_new = cfg.sampling.max_new_tokens.min(model.max_positions().saturating_sub(s.prompt_len));
-    // After a rewind the cache holds positions the completion no longer has: drop them and
-    // re-feed the last kept token to get the logits at the rewind point.
     let resync = |s: &Steer, cache: &mut KvCache| -> Result<Vec<f32>> {
         let keep = s.prompt_len + s.completion.len();
         cache.truncate(keep - 1)?;

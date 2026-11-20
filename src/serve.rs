@@ -1,4 +1,3 @@
-
 use crate::checkpoint;
 use crate::model::KvCache;
 use crate::rollout::{EndReason, Episode, Fork, Outcome, PromptItem};
@@ -13,8 +12,6 @@ use std::collections::BTreeMap;
 
 const PAGE: &str = include_str!("ui.html");
 
-/// The page: from the file named by MANUAL_RL_PAGE if set (so page edits need only a reload, not a
-/// restart that would drop unapplied picks), else the copy built into the binary.
 fn page() -> String {
     std::env::var("MANUAL_RL_PAGE").ok()
         .and_then(|p| std::fs::read_to_string(p).ok())
@@ -250,8 +247,6 @@ impl Server<'_> {
     }
 
     fn piece(&self, ids: &[u32], i: usize) -> String {
-        // Decode with a little left context so multi-byte characters split across tokens
-        // come out whole on the token that completes them.
         let lo = i.saturating_sub(6);
         let dec = |s: &[u32]| self.r.tokenizer.decode(s, false).unwrap_or_default();
         let (a, b) = (dec(&ids[lo..i]), dec(&ids[lo..=i]));
@@ -335,8 +330,6 @@ pub fn serve(r: &mut Runner, addr: &str) -> Result<()> {
                     let idx = s.current.context("no problem open")?;
                     s.open(idx, true)
                 }
-                // With idx, act on that problem's answer (it becomes the open one): concurrent
-                // clients, e.g. several LLM editors, each name their own problem.
                 "/api/pick" => {
                     s.focus(q.idx)?;
                     s.pick(q.pos.context("pos")?, q.token.context("token")?)

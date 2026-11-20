@@ -1,7 +1,3 @@
-"""
-usage: pivot.py BASE_MODEL TRAINED_MODEL BASE_TEST.jsonl TRAINED_TEST.jsonl OUT.jsonl
-"""
-
 import json, sys, gc
 sys.path.insert(0, "/home/mason/manual-rl/tools")
 from math_eval import make_llm, grade, TEMPLATE, load

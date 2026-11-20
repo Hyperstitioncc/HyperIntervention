@@ -1,4 +1,3 @@
-
 use crate::model::Model;
 use crate::rollout::{Episode, Outcome};
 use anyhow::{bail, Result};
@@ -129,10 +128,6 @@ fn softplus(x: f64) -> f64 {
     if x > 30.0 { x } else { x.exp().ln_1p() }
 }
 
-/// The moments live on `device`: the parameters' own device, or the CPU for full fine-tuning of a
-/// large model (at 7B the two moments are 61 GB, which with the f32 masters and gradients does
-/// not fit beside them on one GPU). Offloaded, each step moves the gradient to the CPU and the
-/// update back; the arithmetic is the same.
 pub struct AdamW {
     pub m: Vec<Tensor>,
     pub v: Vec<Tensor>,
@@ -201,11 +196,6 @@ impl AdamW {
     }
 }
 
-/// One AdamW moment update and step direction on the CPU: (m, v, update), as one fused pass over
-/// the values on every core. Candle's CPU ops run these elementwise ops one at a time on one
-/// thread, about two minutes per step for 7B. The arithmetic matches the tensor-op path exactly:
-/// the same f32 operations in the same order (candle turns `t * x` into `t·f32(x)` and `t / x`
-/// into `t·f32(1/x)`, and Rust never fuses a multiply-add on its own).
 #[allow(clippy::too_many_arguments)]
 pub fn adam_cpu(m: &Tensor, v: &Tensor, g: &Tensor, b1: f64, b2: f64, bc1: f64, bc2: f64, eps: f64)
     -> Result<(Tensor, Tensor, Tensor)> {

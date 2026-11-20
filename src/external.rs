@@ -1,22 +1,3 @@
-//! Requests (one JSON object per line, to the child's stdin):
-//!
-//! ```text
-//! {"type":"step", "prompt":{..}, "position":12, "completion":[..], "text":"..",
-//!  "proposal":{"token":42,"prob":0.31,"text":".."}, "top":[{"token":..,"prob":..,"text":..},..],
-//!  "forks":[..], "revisions":0}
-//! {"type":"judge", "prompt":{..}, "completion":[..], "text":"..", "ended_by":"eos",
-//!  "forks":[..], "revisions":0}
-//! ```
-//!
-//! Replies (one line each, on the child's stdout):
-//!
-//! ```text
-//! {"action":"accept"} | {"action":"stop"}
-//! {"action":"force","tokens":[..]} | {"action":"force","text":".."}
-//! {"action":"rewind","to":7,"tokens":[..]}  (or "text"; neither = resample)
-//! {"verdict":"done"} | {"verdict":"abandon"} | {"verdict":"revise","to":7,"text":".."}
-//! ```
-
 use crate::rollout::{Decider, Decision, Judge, RolloutView, StepView, Text, Verdict};
 use anyhow::{bail, Context, Result};
 use serde::Deserialize;

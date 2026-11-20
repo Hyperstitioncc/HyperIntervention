@@ -1,6 +1,3 @@
-"""
-usage: diverge.py TOKENIZER_DIR COLLECTED[,COLLECTED..] EVAL_TRAIN_JSONL [EVAL_TRAIN_JSONL..]"""
-
 import json, sys, collections
 from transformers import AutoTokenizer
 

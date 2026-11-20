@@ -1,7 +1,3 @@
-# One big batch of LLM-editor corrections, trained offline from base (tools/batch_train.py sets lr and
-# epochs per stage):  manual-rl train batch.toml --episodes BATCH.jsonl --out DIR
-# Live rounds of 8 problems at lr 1e-5 x 3 epochs hurt MATH test by 1.4 points (11-07), so: every
-# correction in one minibatch, many epochs, small steps.
 model = "/home/mason/models/qwen2.5-7b-instruct"
 run_dir = "unused"
 prompts = "/home/mason/mathx/pick-near-ui.jsonl"

@@ -1,13 +1,3 @@
-"""MATH data, eval and comparison for manual-rl experiments (runs in a vLLM venv).
-
-  math_eval.py pick  --model M --n 400 --out prompts.jsonl    train-split problems the model gets wrong
-      [--samples 8 --temperature 0.7]                         ...greedy, but solves in >= 1 of K samples
-  math_eval.py eval  --model M [--lora DIR] --out DIR          greedy on the test split, graded
-  math_eval.py compare A/results.jsonl B/results.jsonl         paired flips between two evals
-
-Training prompts come from the train split and eval from the test split (same distribution, no
-shared problems). Both use TEMPLATE, which manual-rl's run.toml must repeat exactly.
-"""
 import argparse, json, math, os, random, re, sys
 
 SYSTEM = "Please reason step by step, and put your final answer within \\boxed{}."
@@ -45,8 +35,6 @@ def load(split):
 
 
 def braced(tex):
-    r"""TeX shorthand made explicit: \frac\pi 2 -> \frac{\pi}{2}, \sqrt3 -> \sqrt{3}, \dfrac12 -> \dfrac{1}{2}.
-    MATH's reference answers use it and math_verify cannot parse it, so a right answer graded wrong."""
     out, i = [], 0
     macro = re.compile(r"\\(dfrac|tfrac|frac|sqrt)(?![a-zA-Z])")
     while True:
@@ -109,7 +97,6 @@ def grade(answer, completion):
 
 def make_llm(model, lora=None, max_tokens=4096, gpu_mem=0.9):
     from vllm import LLM
-    # MATH_EVAL_DTYPE=float32 evaluates an f32 checkpoint without rounding its weights to bf16
     kw = dict(model=model, dtype=os.environ.get("MATH_EVAL_DTYPE", "bfloat16"), max_model_len=max_tokens + 2048, seed=0, gpu_memory_utilization=gpu_mem)
     if lora:
         kw.update(enable_lora=True, max_lora_rank=json.load(open(os.path.join(lora, "adapter_config.json")))["r"])
@@ -122,7 +109,6 @@ def generate(llm, rows, lora=None, max_tokens=4096, n=1, temperature=0.0, seed=0
     if lora:
         from vllm.lora.request import LoRARequest
         req = LoRARequest("adapter", 1, lora)
-    # <|im_end|> ends the template's assistant turn; a base model's generation_config only lists <|endoftext|>
     sp = SamplingParams(n=n, temperature=temperature, max_tokens=max_tokens, seed=seed, stop_token_ids=[151645])
     outs = llm.generate([TEMPLATE.replace("{prompt}", r["prompt"]) for r in rows], sp, lora_request=req)
     return [[c.text for c in o.outputs] for o in outs]

@@ -1,7 +1,3 @@
-"""Compare `manual-rl score` against HuggingFace transformers on the same text.
-
-usage: python hf_compare.py <model_dir> <score.json>   (score.json = output of `manual-rl score`)
-"""
 import json, sys
 import torch
 from transformers import AutoModelForCausalLM

@@ -1,15 +1,3 @@
-"""The steering server (`manual-rl ui`'s HTTP API) on vLLM: concurrent clients' generations are batched.
-
-    steer_vllm.py --config experiments/math/ui-base2.toml [--port 8765] [--gpu-mem 0.25]
-
-Same endpoints and draft JSON as src/serve.rs, and the same collected.jsonl episodes (so `manual-rl
-train` replays them), for collection only: no /api/apply (gradients are applied offline). Differences:
-  - requests run concurrently (one lock per problem), so N editor workers share one batched engine;
-  - a response carries the problem list only for /api/state;
-  - entropy comes from the top-20 log-probs vLLM returns, with the remaining mass as one bucket
-    (a lower bound on the full-vocabulary entropy; it only ranks branch points for the editor).
-Greedy (temperature 0) only, as in the eval.
-"""
 import argparse, asyncio, json, math, os, tomllib, uuid
 
 from aiohttp import web
@@ -132,7 +120,7 @@ class Steer:
         completion = [t["id"] for t in d["toks"]]
         forks = [{"pos": p["pos"], "forced": [p["token"]], "rejected": [p["original"]],
                   "rejected_prob": p["original_prob"], "forced_prob": d["toks"][p["pos"]]["prob"]} for p in d["picks"]]
-        for f in forks:  # the invariant training relies on (Episode::check)
+        for f in forks:
             assert completion[f["pos"]] == f["forced"][0], "fork is not part of the final completion"
         return {"prompt": self.prompts[idx], "prompt_tokens": d["prompt_tokens"], "completion": completion,
                 "text": self.tok.decode(completion, skip_special_tokens=False), "forks": forks,

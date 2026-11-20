@@ -1,4 +1,3 @@
-"""Greedy vLLM pass over a problem list; write the ids it already gets right (for llm_editor --skip)."""
 import json, sys
 sys.path.insert(0, "/home/mason/manual-rl/tools")
 from math_eval import make_llm, generate, grade

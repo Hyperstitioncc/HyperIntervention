@@ -1,4 +1,3 @@
-
 use crate::config::ModelConfig;
 use anyhow::{bail, Context, Result};
 use candle_core::{DType, Device, IndexOp, Tensor, Var, D};
@@ -195,7 +194,7 @@ pub struct Model {
     embed: Param,
     layers: Vec<Layer>,
     norm: Param,
-    lm_head: Option<Param>, // None: tied to `embed`
+    lm_head: Option<Param>,
     cos: Tensor,
     sin: Tensor,
     max_pos: usize,
@@ -258,9 +257,6 @@ impl Model {
             let b = src.get(&format!("{module}.bias"))?;
             let (out_f, in_f) = w.dims2()?;
             let lora = if targets.iter().any(|t| t == short) {
-                // A ~ U(-1/sqrt(in), 1/sqrt(in)) (kaiming-uniform, a=sqrt(5)), B = 0: the adapter
-                // starts as the identity edit. Drawn on the CPU so a seed means the same init on
-                // every device.
                 let bound = 1.0 / (in_f as f32).sqrt();
                 let a: Vec<f32> = (0..rank * in_f).map(|_| rng.gen_range(-bound..bound)).collect();
                 let a = Tensor::from_vec(a, (rank, in_f), &Device::Cpu)?.to_device(device)?;
@@ -390,8 +386,6 @@ impl Model {
             Ok(y.unsqueeze(2)?.expand((1, kv, rep, s, d))?.reshape((1, h, s, d))?)
         };
         let (k, v) = (expand(&k)?, expand(&v)?);
-        // Scores in f32 (as SDPA/flash kernels keep them): bf16 scores lose ~0.1 per logit at |s|~20,
-        // which made bf16 log-probs ~15x noisier than HF bf16 and flipped greedy tokens.
         let f32 = |y: &Tensor| y.to_dtype(DType::F32);
         let mut att = (f32(&q)?.matmul(&f32(&k)?.t()?)? * scale)?;
         if let Some(mask) = &f.mask {
@@ -467,18 +461,12 @@ impl Model {
         self.head_logprobs(&x, ids, positions, grad)
     }
 
-    /// Checkpointed by layer: the forward keeps only each layer's input; the backward recomputes
-    /// one layer at a time and hands the gradient of its input down to the layer below, so only
-    /// one layer's activations are ever alive. One extra forward buys memory that no longer
-    /// grows with depth.
     pub fn logprob_grads(&self, ids: &[u32], positions: &[usize], weights: &[f32]) -> Result<(Vec<f32>, Vec<Option<Tensor>>)> {
         let mut acc = vec![None; self.trainable().len()];
         let lp = self.logprob_grads_into(ids, positions, weights, &mut acc)?;
         Ok((lp, acc))
     }
 
-    /// [`Model::logprob_grads`], adding the gradient into `acc` as each layer produces it, so
-    /// summing over many sequences holds one set of gradients, not two (30 GB each at 7B, full).
     pub fn logprob_grads_into(&self, ids: &[u32], positions: &[usize], weights: &[f32],
                               acc: &mut [Option<Tensor>]) -> Result<Vec<f32>> {
         if weights.len() != positions.len() {

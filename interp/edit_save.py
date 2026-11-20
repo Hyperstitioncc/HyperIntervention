@@ -87,7 +87,6 @@ def load_model(p):
 
 
 def lp_last(m, s):
-    # clamp: tokens at -inf would make 0 * inf = nan in the KL
     return torch.log_softmax(m(torch.tensor([s], device="cuda")).logits[0].float(), -1).clamp_min(-1e4)
 
 

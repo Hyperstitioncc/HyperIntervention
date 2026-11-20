@@ -1,4 +1,3 @@
-#   manual-rl train full.toml --episodes ../collect/episodes.jsonl --out DIR
 model = "/home/mason/models/qwen2.5-7b-instruct"
 run_dir = "unused"
 prompts = "/home/mason/mathx/pick.jsonl"
@@ -11,7 +10,7 @@ mode = "full"
 pair_weight = 0.0
 sft_weight = 0.0
 forced_weight = 1.0
-pair_horizon = 4096           # never truncate a correction
+pair_horizon = 4096
 epochs = 3
 minibatch = 4
-lr = 1e-5   # untuned; swept on held-out train problems
+lr = 1e-5

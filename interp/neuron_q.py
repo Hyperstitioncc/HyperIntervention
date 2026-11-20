@@ -1,7 +1,3 @@
-"""
-usage: neuron_q.py BASE TRAINED PIVOT.jsonl FEWNEURONS.jsonl
-"""
-
 import json, sys, random, torch
 import torch.nn.functional as Fn
 from transformers import AutoModelForCausalLM, AutoTokenizer, AttentionInterface

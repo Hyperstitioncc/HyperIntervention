@@ -1,9 +1,3 @@
-"""
-usage: rankcheck.py BASE TRAINED BATCH.jsonl
-  update   = W_trained - W_base   (10 AdamW epochs on the 93-solve batch)
-  sign(gradient) (Adam's first step is about lr * sign(grad))
-"""
-
 import json, sys, torch
 from safetensors import safe_open
 from transformers import AutoModelForCausalLM
@@ -18,7 +12,7 @@ for n, p in P.items():
     p.requires_grad_(n in names)
 eps = [json.loads(l)["episode"] for l in open(batch)]
 nf = sum(len(e["forks"]) for e in eps)
-for e in eps:  # forced-token CE, summed then averaged over all forced tokens (as in training)
+for e in eps:
     ids = torch.tensor([e["prompt_tokens"] + e["completion"]], device="cuda")
     lp = torch.log_softmax(m(ids).logits[0].float(), -1)
     P0 = len(e["prompt_tokens"])

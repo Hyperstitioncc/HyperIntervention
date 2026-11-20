@@ -1,16 +1,3 @@
-"""A person at a terminal as manual-rl's decider and judge (both roles, one process).
-
-The protocol runs over stdin/stdout (see src/external.rs); the person is reached through
-/dev/tty, so run it from an interactive ssh session:
-
-    [decider] kind = "external"  command = ["python", "steer_ui.py", "--tokenizer", MODEL_DIR]
-    [judge]   the same command
-
-The model writes its answer on its own (auto mode). At the end you see the solution with
-numbered lines, the reference answer and an auto-grade, and you either take it, skip it, or
-cut it at a point, type the right text from there, and let the model carry on. Step mode
-shows each next token with its alternatives, for corrections finer than retyping.
-"""
 import argparse, json, os, sys
 
 R, B, D, G, Y, C, M = "\033[0m", "\033[1m", "\033[2m", "\033[32m", "\033[33m", "\033[36m", "\033[35m"
@@ -25,7 +12,7 @@ def tty_setup():
     sys.stdin = open(0, "r", closefd=False)
     sys.stdout = open(1, "w", closefd=False)
     try:
-        import readline  # noqa: F401 (line editing for input())
+        import readline
     except ImportError:
         pass
     return proto_in, proto_out, sys.stdout
@@ -34,7 +21,7 @@ def tty_setup():
 ap = argparse.ArgumentParser()
 ap.add_argument("--tokenizer", required=True, help="model dir holding tokenizer.json")
 args = ap.parse_args()
-from tokenizers import Tokenizer  # noqa: E402
+from tokenizers import Tokenizer
 
 tok = Tokenizer.from_file(os.path.join(args.tokenizer, "tokenizer.json"))
 proto, proto_out, out = tty_setup()

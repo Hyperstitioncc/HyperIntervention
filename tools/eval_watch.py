@@ -8,7 +8,7 @@ HERE = os.path.abspath(__file__)
 def train_rows(n=1500, seed=0, levels="3,4,5"):
     lv = {f"Level {x}" for x in levels.split(",")}
     rows = [r for r in load("train") if r["answer"] and r["level"] in lv]
-    random.Random(seed).shuffle(rows)  # the same draw as `math_eval.py pick`
+    random.Random(seed).shuffle(rows)
     return rows[:n]
 
 
@@ -41,8 +41,6 @@ def results(path):
 
 
 def model_dir(ckpt, dst):
-    """A directory vLLM can load: the checkpoint's model.safetensors and configs, hard-linked (so pruning
-    the checkpoint mid-eval cannot break it) and without the optimizer/master safetensors."""
     os.makedirs(dst, exist_ok=True)
     for f in os.listdir(ckpt):
         if f == "model.safetensors" or (f.endswith((".json", ".txt", ".model")) and f != "state.json"):
@@ -91,7 +89,7 @@ def note(url, text):
     print(text, file=sys.stderr, flush=True)
     try:
         Server(url)("note", text=text)
-    except Exception as e:  # noqa: BLE001 (the page is optional)
+    except Exception as e:
         print(f"(note failed: {e})", file=sys.stderr)
 
 
@@ -160,7 +158,7 @@ def watch(a):
         n = int(ck[-5:])
         try:
             evaluate(a, B, near, ck, f"round-{n}", trained_ids(a.run, n), seed=n)
-        except FileNotFoundError:  # pruned or still being written
+        except FileNotFoundError:
             time.sleep(30)
 
 

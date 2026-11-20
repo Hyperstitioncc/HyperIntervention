@@ -1,4 +1,3 @@
-
 use crate::checkpoint::{self, RunState};
 use crate::config::eos_ids;
 use crate::model::{Adapt, Model};
@@ -142,7 +141,6 @@ pub fn read_episodes(path: &Path) -> Result<Vec<EpisodeRecord>> {
     let mut out = vec![];
     for line in std::io::BufReader::new(f).lines() {
         let line = line?;
-        // A line cut short by a preemption is the only kind that fails to parse; skip it.
         if let Ok(r) = serde_json::from_str(&line) {
             out.push(r);
         }

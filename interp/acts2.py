@@ -1,7 +1,3 @@
-"""
-usage: acts2.py BASE TRAINED CONTROL PIVOT.jsonl ID [ID ...]
-"""
-
 import json, sys, torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 sys.path.insert(0, "/home/mason/manual-rl/tools")
@@ -58,7 +54,7 @@ for n, i in enumerate(ids):
     ab, at, ac = AB[n], AT[n], AC[n]
     T = ab.shape[1]
     piv = T - 1
-    lo = sys_len  # skip the shared system prompt (attention-sink positions with huge activations)
+    lo = sys_len
     rms = ab[:, lo:].pow(2).mean(1).sqrt().clamp_min(1e-3)
     ordinary = list(range(max(lo, prompt_lens[n]), piv)) or list(range(lo, piv))
     zt = (at - ab) / rms[:, None]

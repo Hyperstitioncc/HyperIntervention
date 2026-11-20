@@ -1,8 +1,3 @@
-"""
-usage: swap_test.py BASE TRAINED PIVOT.jsonl OUT.jsonl [ID ...]   (no IDs: every causally pivotal item)
-SWAP_DTYPE=float32 loads both models in f32 (needed for an f32-trained update; bf16 rounds most of it away).
-"""
-
 import json, os, sys, torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, AttentionInterface
 from transformers.models.qwen2.modeling_qwen2 import repeat_kv
@@ -24,7 +19,6 @@ ATT = {"mode": None, "rec": {}, "src": None}
 
 def attn(module, q, k, v, mask, scaling, dropout=0.0, **kw):
     k, v = repeat_kv(k, module.num_key_value_groups), repeat_kv(v, module.num_key_value_groups)
-    # scores, softmax and the weighted sum in f32: eager's bf16 scores flip near-tied tokens (as candle's did)
     w = torch.matmul(q.float(), k.float().transpose(2, 3)) * scaling
     if mask is not None:
         w = w + mask
@@ -38,7 +32,6 @@ def attn(module, q, k, v, mask, scaling, dropout=0.0, **kw):
 
 
 AttentionInterface.register("swap", attn)
-# an unregistered implementation gets NO mask (transformers assumes a backend that masks itself): use eager's causal mask
 from transformers.masking_utils import AttentionMaskInterface, eager_mask
 AttentionMaskInterface.register("swap", eager_mask)
 
@@ -112,7 +105,7 @@ def process(chunk):
 
 
 res = [dict(id=it["id"], tb=it["tb"], tt=it["tt"], tb_text=it["tb_text"], tt_text=it["tt_text"]) for it in items]
-CH = int(os.environ.get("SWAP_CHUNK", "20"))  # items per model load; recordings are held in host RAM
+CH = int(os.environ.get("SWAP_CHUNK", "20"))
 for c0 in range(0, len(items), CH):
     process(range(c0, min(len(items), c0 + CH)))
 

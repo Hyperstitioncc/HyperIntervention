@@ -1,4 +1,3 @@
-# Run interactively:  ~/manual-rl/target/release/manual-rl run collect.toml
 model = "/home/mason/models/qwen2.5-7b-instruct"
 run_dir = "/home/mason/mathx/collect"
 prompts = "/home/mason/mathx/pick.jsonl"
@@ -8,7 +7,7 @@ episodes_per_round = 100000
 [episode]
 max_revisions = 100
 [episode.sampling]
-temperature = 0.0             # greedy, as in the eval
+temperature = 0.0
 max_new_tokens = 4096
 show_top = 10
 [update]

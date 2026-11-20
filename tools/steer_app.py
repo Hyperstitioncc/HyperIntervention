@@ -1,16 +1,3 @@
-"""Desktop app for steering by hand (Tkinter, standard library only).
-
-The model runs on the GPU host under `manual-rl ui CONFIG`; this window talks to it over an
-ssh tunnel:
-
-    ssh -N -L 8765:localhost:8765 mason@HOST      # in one terminal
-    python3 steer_app.py                          # in another (any python3 with tkinter)
-
-Click a token to see the sampler's probabilities there. Click a candidate to fork the answer
-at that token (the rest is regenerated); clicking the token already there reinforces it.
-"Unselect" reverts a pick. "Apply gradient" trains on every pick so far and regenerates.
-Keys: Left/Right move, 0-9 pick candidate, u unselect.
-"""
 import argparse, bisect, json, queue, threading, urllib.request
 import tkinter as tk
 from tkinter import messagebox, ttk
@@ -251,7 +238,6 @@ class App:
         outer.add(left, weight=0)
 
         mid = ttk.Frame(outer)
-        # Explicit colours throughout: under macOS dark mode Tk defaults the text to white.
         self.problem = tk.Text(mid, height=7, wrap="word", font=("Helvetica", 13), relief="flat",
                                background="#f4f3ef", foreground="#222", padx=10, pady=8)
         self.problem.pack(fill="x", padx=8, pady=(8, 0))
@@ -336,7 +322,7 @@ class App:
                     self.results.put(json.loads(r.read()))
             except urllib.error.HTTPError as e:
                 self.results.put(json.loads(e.read() or b'{"error":"http error"}'))
-            except Exception as e:  # noqa: BLE001
+            except Exception as e:
                 self.results.put({"error": f"{e} (is the ssh tunnel up?)"})
         threading.Thread(target=run, daemon=True).start()
         self.root.after(100, self.poll)
@@ -358,7 +344,7 @@ class App:
             self.S = j
             try:
                 self.render()
-            except Exception as e:  # noqa: BLE001 (show it rather than freeze the window)
+            except Exception as e:
                 import traceback
                 traceback.print_exc()
                 messagebox.showerror("manual-rl", f"drawing failed: {e!r}")
@@ -408,8 +394,6 @@ class App:
         y = self.answer.yview()[0]
         self.answer.config(state="normal")
         self.answer.delete("1.0", "end")
-        # One batched insert and a handful of styled ranges: a Tk tag per token (thousands of
-        # tags) makes the text widget burn CPU on every redraw, badly so on macOS.
         texts = [t["text"] or "\u200b" for t in D["tokens"]]
         self.starts = [0]
         for x in texts:
@@ -494,7 +478,6 @@ class App:
             widget.insert("end", *args)
 
     def spans(self, i):
-        """Display ranges showing token i (newlines trimmed: a styled newline paints its line)."""
         a, b = self.starts[i], self.starts[i + 1]
         out = []
         k = max(0, bisect.bisect_right(self.seg_src, a) - 1)

@@ -42,7 +42,7 @@ def main():
     llm = make_llm(a.model, lora=arms[0][1] if arms else None, gpu_mem=a.gpu_mem)
     correct = {}
     for i, (name, path) in enumerate([("base", None)] + arms):
-        if path:  # a distinct LoRARequest id per adapter: vLLM caches adapters by id
+        if path:
             from vllm import SamplingParams
             from vllm.lora.request import LoRARequest
             outs = llm.generate([TEMPLATE.replace("{prompt}", r["prompt"]) for r in rows],

@@ -1,4 +1,3 @@
-
 use candle_core::{DType, Device, Tensor};
 use manual_rl::compose::{AcceptAll, AcceptAtEnd, DecideFn, Script, ScriptJudge};
 use manual_rl::config::ModelConfig;
@@ -326,7 +325,6 @@ fn checkpointed_gradients_match_autograd() {
             let (vars, ids) = (m.trainable(), vec![3u32, 14, 15, 9, 26, 5, 35, 8, 9, 7]);
             let pos = vec![2usize, 5, 6, 9];
             let w = vec![0.5f32, -1.0, 2.0, 0.25];
-            // LoRA B starts at zero, which would make A's gradient vanish: move B first.
             for (n, v) in &vars {
                 if n.ends_with("lora_B.weight") {
                     v.set(&(v.as_detached_tensor().ones_like().unwrap() * 0.01).unwrap()).unwrap();

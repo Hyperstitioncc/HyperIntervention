@@ -1,7 +1,3 @@
-"""
-usage: pool_test.py BASE TRAINED PIVOT.jsonl FEWNEURONS.jsonl
-"""
-
 import json, sys, random, torch
 from collections import Counter
 from transformers import AutoModelForCausalLM, AutoTokenizer, AttentionInterface

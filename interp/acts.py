@@ -1,8 +1,3 @@
-"""
-usage: acts.py BASE TRAINED CONTROL PIVOT.jsonl ID [ID ...]  ->  prints sparsity stats + top neurons
-CONTROL: base + same-norm random noise (the eval's control), for a baseline of "how sparse is any change".
-"""
-
 import json, sys, torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 sys.path.insert(0, "/home/mason/manual-rl/tools")

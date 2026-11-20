@@ -63,8 +63,6 @@ header.bar::after {
 .loadbtn.write { color: var(--good); border-color: color-mix(in srgb, var(--good) 45%, var(--line-2)); }
 .loadbtn.write:hover { color: #7ff0c8; border-color: var(--good); background: color-mix(in srgb, var(--good) 10%, transparent); }
 
-/* minmax(0, …): a long unbreakable run in the answer must not widen the middle column and push
-   the candidates column off-screen. */
 main { display: grid; grid-template-columns: 220px minmax(0, 1fr) minmax(300px, 360px); min-height: 0; overflow: hidden; }
 #side { border-left: 1px solid var(--line); background: var(--panel-2); overflow-y: auto; padding: 12px 12px 40px; }
 #side .head { font-size: 9px; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-faint); padding: 0 2px 8px; }
@@ -255,8 +253,6 @@ function ramp(stops, t) {
   }
   return `rgb(${hexToRgb(stops.at(-1)[1]).join(',')})`;
 }
-/* Surprisal in BITS, calibrated so p≈1 stays dim and p≲0.35 saturates. */
-/* Entropy of the model's distribution at a position (nats in, colour out): 0 dim, >= 3 bits saturated. */
 function entropyColor(h) {
   return ramp([[0,'#4a5160'],[.35,'#5f8fb0'],[1,'#7fe0ff']], Math.min(1, h / Math.LN2 / 3));
 }
@@ -270,10 +266,6 @@ const fmtPct = x => (x * 100).toFixed(x < 0.01 ? 2 : 1) + '%';
 const fmtNats = x => (x >= 0 ? '+' : '') + x.toFixed(2);
 const fmtLr = x => x.toExponential(0);
 
-/* ---- LaTeX-ish display (ported from tools/steer_app.py) ----
- * Source text -> segments [srcStart, srcEnd, text, tags, plain]. `plain` segments show their
- * source unchanged, so they split exactly at token boundaries; the rest belong to the token
- * holding their first source character. Hidden markup emits empty text. */
 const SYM = new Map(Object.entries({
   cdot: "·", times: "×", div: "÷", pm: "±", mp: "∓", leq: "≤", le: "≤", geq: "≥", ge: "≥", neq: "≠", ne: "≠",
   approx: "≈", equiv: "≡", sim: "∼", cong: "≅", propto: "∝", infty: "∞", to: "→", rightarrow: "→",
@@ -486,9 +478,6 @@ function lastBoxed(s) {
   }
   return null;
 }
-/* Rough answer check: does the boxed answer equal the reference? Not math_verify (the eval's grader),
- * but tolerant of the usual differences: thousands commas, \dfrac vs \frac vs a/b vs decimals,
- * units in \text{}, degrees, %, $, "x =", spacing commands, and the order of a bare list. */
 function canonAns(s) {
   s = s.replace(/\\(?:left|right|displaystyle|bigl?|bigr?|Bigl?|Bigr?)(?![a-zA-Z])/g, '')
     .replace(/\\[!,;: ]/g, '').replace(/\\[dt]frac/g, '\\frac').replace(/\\(?:mbox|mathrm|textbf|text)\{([^{}]*)\}/g, '$1')
@@ -555,8 +544,6 @@ const el = (tag, cls, text) => {
   return e;
 };
 
-// One request at a time, like the desktop app: the server runs one generation at a time anyway,
-// and queued clicks would land on whichever answer finished last.
 async function api(path, body = {}, working = '') {
   if (busy) { flashBusy(); return null; }
   busy = true; syncButtons();
@@ -609,7 +596,6 @@ function status(msg, kind = '') {
   s.className = 'status' + (kind ? ' ' + kind : '');
 }
 
-/* Clear the stage while a fresh answer is generated, so the old one isn't mistaken for it. */
 function showWaiting(msg) {
   for (const id of ['prompt', 'pmeta', 'strip-wrap']) $(id).style.display = 'none';
   $('empty').style.display = '';
@@ -691,7 +677,6 @@ function renderStrip(d) {
   if (!d.tokens.length) { strip.append(el('span', 'empty', '∅ — empty completion')); return; }
   const picks = new Map(d.picks.map(p => [p.pos, p]));
   const pieces = tex ? texPieces(d.tokens) : d.tokens.map((t, i) => [i, viewMode === 'tokens' ? disp(t.text) : t.text, []]);
-  // A token drawn entirely as hidden markup (e.g. "\frac") shows its marks on the next visible piece.
   const shown = new Set(pieces.map(p => p[0]));
   const proxy = new Map();
   for (const i of [...picks.keys(), sel]) {
@@ -717,7 +702,6 @@ function renderStrip(d) {
   stage.scrollTop = y;
 }
 
-/* Move the selection without rebuilding the answer (keeps scroll; cheap on long answers). */
 function select(i, scroll = false) {
   sel = i; cursor = 0;
   const ws = [...$('strip').children];
@@ -786,7 +770,6 @@ function renderAlts(d) {
     row.append(bw);
     row.append(el('span', 'pv', fmtPct(c.prob)));
     row.append(el('span', 'bits', bits(c.prob).toFixed(2) + ' b'));
-    // Hover only moves the highlight: rebuilding the rows here could swallow the click.
     row.onmouseenter = () => { cursor = j; box.querySelectorAll('.yopt').forEach((r, k) => r.classList.toggle('cursor', k === j)); };
     row.onclick = () => pickCand(d, c);
     box.append(row);
@@ -888,8 +871,6 @@ document.addEventListener('keydown', e => {
 
 api('/api/state');
 
-/* Follow changes made by other clients (an LLM editor driving the same server): poll the cheap
- * progress endpoint, show their generation progress, and refresh when the state version moves. */
 setInterval(async () => {
   if (busy || !S) return;
   try {
